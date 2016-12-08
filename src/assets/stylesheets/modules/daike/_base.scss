@@ -1,0 +1,52 @@
+body {
+  //font-family: 'Open Sans', Helvetica, Tahoma, Arial, "Hiragino Sans GB", STXihei, "华文细黑", "Microsoft YaHei", "微软雅黑", SimSun, "宋体", Heiti, "黑体", sans-serif !important;
+  //line-height: 1.5em !important;
+  background: #ffffff !important;
+}
+
+.header {
+  height: inherit !important;
+  padding: 0 !important;
+  position: inherit !important;
+  box-shadow: none !important;
+}
+
+.backdrop {
+  display: none !important;
+}
+
+.article > .wrapper {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.drawer {
+  padding-top: 0 !important;
+}
+
+.toc {
+  .section {
+    color: #0d2b3e !important;
+  }
+
+  a {
+    color: #0d2b3e !important;
+    text-decoration: none !important;
+
+    &:hover {
+      color: #4caf50 !important;
+    }
+  }
+
+  .anchor a {
+    border-color: #4caf50 !important;
+  }
+}
+
+a.headerlink {
+  display: none !important;
+}
+
+.article table {
+  width: 100% !important;
+}

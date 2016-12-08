@@ -28,6 +28,8 @@
 @import "quantum-colors";
 @import "quantum-shadows";
 
+
+
 /* ----------------------------------------------------------------------------
  * Application
  * ------------------------------------------------------------------------- */
@@ -47,3 +49,24 @@
 
 @import "print";
 @import "shame";
+
+// bootstrap-sass
+@import "bootstrap/variables";
+@import "bootstrap/mixins";
+
+@import "bootstrap/normalize";
+
+@import "bootstrap/scaffolding";
+@import "bootstrap/type";
+@import "bootstrap/grid";
+@import "bootstrap/forms";
+
+@import "bootstrap/navs";
+//@import "bootstrap/tables";
+@import "bootstrap/navbar";
+@import "bootstrap/component-animations";
+
+
+//@import "open-sans";
+@import "modules/daike/base";
+@import "modules/daike/header";

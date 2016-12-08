@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', function() {
     } else if (drawer.offsetHeight < window.innerHeight) {
       if (drawer.style.position != 'fixed') {
         drawer.style.position = 'fixed';
-        drawer.style.top = 0;
+        drawer.style.top = 100;
         drawer.style.bottom = null;
       }
 
@@ -153,28 +153,28 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 
   /* Check for media query events */
-  var check = function() {
-    var main = document.querySelector('.main');
-    window.removeEventListener('scroll', align);
-
-    /* Reset drawer position when entering collapsed mode */
-    if (matchMedia("only screen and (max-width: 959px)").matches) {
-      drawer.style.position = null;
-      drawer.style.top      = null;
-      drawer.style.bottom   = null;
-
-    /* Check if the scroll handler needs to be registered */
-    } else if (drawer.offsetHeight + 96 < main.offsetHeight) {
-      window.addEventListener('scroll', align);
-      align();
-    }
-  }
-
-  /* Register resize handler and fire once */
-  if (!Modernizr.ios) {
-    window.addEventListener('resize', check);
-    check();
-  }
+  // var check = function() {
+  //   var main = document.querySelector('.main');
+  //   window.removeEventListener('scroll', align);
+  //
+  //   /* Reset drawer position when entering collapsed mode */
+  //   if (matchMedia("only screen and (max-width: 959px)").matches) {
+  //     drawer.style.position = null;
+  //     drawer.style.top      = null;
+  //     drawer.style.bottom   = null;
+  //
+  //   /* Check if the scroll handler needs to be registered */
+  //   } else if (drawer.offsetHeight + 96 < main.offsetHeight) {
+  //     window.addEventListener('scroll', align);
+  //     align();
+  //   }
+  // }
+  //
+  // /* Register resize handler and fire once */
+  // if (!Modernizr.ios) {
+  //   window.addEventListener('resize', check);
+  //   check();
+  // }
 
 /* ----------------------------------------------------------------------------
  * Initialize search index

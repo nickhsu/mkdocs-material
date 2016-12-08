@@ -1,1 +1,4969 @@
-html{box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box}*,:after,:before{box-sizing:inherit;-moz-box-sizing:inherit;-webkit-box-sizing:inherit}html{font-size:62.5%;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;text-size-adjust:none}a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,main,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0}main{display:block}ul{list-style:none}table{border-collapse:collapse;border-spacing:0}td{text-align:left;font-weight:400;vertical-align:middle}button{outline:0;padding:0;background:transparent;border:none;font-size:inherit}input{-webkit-appearance:none;-moz-appearance:none;-ms-appearance:none;-o-appearance:none;appearance:none;outline:none;border:none}a{text-decoration:none;color:inherit}a,button,input,label{-webkit-tap-highlight-color:rgba(255,255,255,0);-webkit-tap-highlight-color:transparent}h1,h2,h3,h4,h5,h6{font-weight:inherit}pre{background:rgba(0,0,0,.05)}pre,pre code{color:rgba(0,0,0,.87)}.c,.c1,.cm,.o{color:rgba(0,0,0,.54)}.k,.kn{color:#a71d5d}.kd,.kt{color:#0086b3}.n.f,.nf{color:#795da3}.nx{color:#0086b3}.s,.s1{color:#183691}.bp,.mi{color:#9575cd}.icon{font-family:Icon;speak:none;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.icon-search:before{content:"\e600"}.icon-back:before{content:"\e601"}.icon-link:before{content:"\e602"}.icon-close:before{content:"\e603"}.icon-menu:before{content:"\e604"}.icon-forward:before{content:"\e605"}.icon-twitter:before{content:"\e606"}.icon-github:before{content:"\e607"}.icon-download:before{content:"\e608"}.icon-star:before{content:"\e609"}.icon-warning:before{content:"\e610"}.icon-note:before{content:"\e611"}a{-webkit-transition:color .25s;transition:color .25s}.overlay{-webkit-transition:opacity .25s,width 0s .25s,height 0s .25s;transition:opacity .25s,width 0s .25s,height 0s .25s}#toggle-drawer:checked~.overlay,.toggle-drawer .overlay{-webkit-transition:opacity .25s,width 0s,height 0s;transition:opacity .25s,width 0s,height 0s}.js .header{-webkit-transition:background .6s,color .6s;transition:background .6s,color .6s}.js .header:before{-webkit-transition:background .6s;transition:background .6s}.button .icon{-webkit-transition:background .25s;transition:background .25s}body{color:rgba(0,0,0,.87)}@supports (-webkit-appearance:none){body{background:#e84e40}}.ios body{background:#fff}hr{border:0;border-top:1px solid rgba(0,0,0,.12)}.toggle-button{cursor:pointer;color:inherit}.backdrop,.backdrop-paper:after{background:#fff}.overlay{background:rgba(0,0,0,.54);opacity:0}#toggle-drawer:checked~.overlay,.toggle-drawer .overlay{opacity:1}.header{box-shadow:0 1.5px 3px rgba(0,0,0,.24),0 3px 8px rgba(0,0,0,.05);background:#e84e40;color:#fff}.ios.standalone .header:before{background:rgba(0,0,0,.12)}.bar .path{color:hsla(0,0%,100%,.7)}.button .icon{border-radius:100%}.button .icon:active{background:hsla(0,0%,100%,.12)}html{height:100%}body{position:relative;min-height:100%}hr{display:block;height:1px;padding:0;margin:0}.locked{height:100%;overflow:hidden}.scrollable{position:absolute;top:0;right:0;bottom:0;left:0;overflow:auto;-webkit-overflow-scrolling:touch}.scrollable .wrapper{height:100%}.ios .scrollable .wrapper{margin-bottom:2px}.toggle{display:none}.toggle-button{display:block}.backdrop{position:absolute;top:0;right:0;bottom:0;left:0;z-index:-1}.backdrop-paper{max-width:1200px;height:100%;margin-left:auto;margin-right:auto}.backdrop-paper:after{content:" ";display:block;height:100%;margin-left:262px}.overlay{width:0;height:0;z-index:4}.header,.overlay{position:fixed;top:0}.header{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;left:0;z-index:3;height:56px;padding:4px;overflow:hidden}.ios.standalone .header{position:absolute}.bar{display:table;max-width:1184px;margin-left:auto;margin-right:auto}.bar a{display:block}.no-js .bar .button-search{display:none}.bar .path .icon:before{vertical-align:-1.5px}.button{display:table-cell;vertical-align:top;width:1%}.button button{margin:0;padding:0}.button button:active:before{position:relative;top:0;left:0}.button .icon{display:inline-block;font-size:24px;padding:8px;margin:4px}.stretch{display:table;table-layout:fixed;width:100%}.header .stretch{padding:0 20px}.stretch .title{display:table-cell;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}.header .stretch .title{font-size:18px;padding:13px 0}.main{max-width:1200px;margin-left:auto;margin-right:auto}body,input{font-weight:400;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.no-fontface body,.no-fontface input,body,input{font-family:Helvetica Neue,Helvetica,Arial,sans-serif}.no-fontface code,.no-fontface kbd,.no-fontface pre,code,kbd,pre{font-family:Courier New,Courier,monospace}#toggle-drawer:checked~.main .drawer,.toggle-drawer .drawer{-webkit-transform:translateZ(0);transform:translateZ(0)}.no-csstransforms3d #toggle-drawer:checked~.main .drawer,.no-csstransforms3d .toggle-drawer .drawer{display:block}.project{-webkit-transition:none;transition:none}.project .logo img{-webkit-transition:box-shadow .4s;transition:box-shadow .4s}.repo a{-webkit-transition:box-shadow .4s,opacity .4s;transition:box-shadow .4s,opacity .4s}.drawer .toc a.current,.drawer .toc a:focus,.drawer .toc a:hover{color:#e84e40}.drawer .anchor a{border-left:2px solid #e84e40}.drawer .section{color:rgba(0,0,0,.54)}.ios.standalone .project:before{background:rgba(0,0,0,.12)}.project .logo img{background:#fff;border-radius:100%}.project:focus .logo img,.project:hover .logo img{box-shadow:0 4px 7px rgba(0,0,0,.23),0 8px 25px rgba(0,0,0,.05)}.repo a{background:#00bfa5;color:#fff;border-radius:3px}.repo a:focus,.repo a:hover{box-shadow:0 4px 7px rgba(0,0,0,.23),0 8px 25px rgba(0,0,0,.05);opacity:.8}.repo a .count{background:rgba(0,0,0,.26);color:#fff;border-radius:0 3px 3px 0}.repo a .count:before{border-width:15px 5px 15px 0;border-color:transparent rgba(0,0,0,.26);border-style:solid}.drawer{width:262px;font-size:13px;line-height:1em}.ios .drawer{overflow:scroll;-webkit-overflow-scrolling:touch}.drawer .toc li a{display:block;padding:14.5px 24px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.drawer .toc li.anchor a{margin-left:12px;padding:10px 24px 10px 12px}.drawer .toc li ul{margin-left:12px}.drawer .current+ul{margin-bottom:9px}.drawer .section{display:block;padding:14.5px 24px}.drawer .scrollable{top:104px;z-index:-1}.drawer .scrollable .wrapper{height:auto;min-height:100%}.drawer .scrollable .wrapper hr{margin:12px 0;margin-right:auto}.drawer .scrollable .wrapper .toc{margin:12px 0}.project{display:block}.project .banner{display:table;width:100%;height:104px;padding:20px}.project .logo{display:table-cell;width:64px;padding-right:12px}.project .logo img{display:block;width:64px;height:64px}.project .name{display:table-cell;padding-left:4px;font-size:14px;line-height:1.25em;vertical-align:middle}.project .logo+.name{font-size:12px}.repo{margin:24px 0;text-align:center}.repo li{display:inline-block;padding-right:12px;white-space:nowrap}.repo li:last-child{padding-right:0}.repo a{display:inline-block;padding:0 10px 0 6px;font-size:12px;line-height:30px;height:30px}.repo a .icon{font-size:18px;vertical-align:-3px}.repo a .count{display:inline-block;position:relative;padding:0 8px 0 4px;margin:0 -10px 0 8px;font-size:12px}.repo a .count:before{content:" ";display:block;position:absolute;top:0;left:-5px}.no-js .repo a .count{display:none}.drawer .toc li a{font-weight:700}.drawer .toc li.anchor a{font-weight:400}.drawer .section,.repo a{font-weight:700}.repo a{text-transform:uppercase}.repo a .count{text-transform:none;font-weight:700}pre span{-webkit-transition:color .25s;transition:color .25s}.copyright a{-webkit-transition:color .25s;transition:color .25s}.ios.standalone .article{background:-webkit-linear-gradient(top,#fff 50%,#e84e40 0);background:linear-gradient(180deg,#fff 50%,#e84e40 0)}.ios.standalone .article .wrapper{background:-webkit-linear-gradient(top,#fff 50%,#fff 0);background:linear-gradient(180deg,#fff 50%,#fff 0)}.article a,.article h1,.article h2{color:#e84e40}.article code{background:#eee}.article kbd{color:#555;background-color:#fcfcfc;border:1px solid #ccc;border-bottom-color:#bbb;border-radius:3px;box-shadow:inset 0 -1px 0 #bbb}.article h1{border-bottom:1px solid rgba(0,0,0,.12)}.article a{border-bottom:1px dotted}.article a:focus,.article a:hover{color:#00bfa5}.article .headerlink{color:rgba(0,0,0,.26);border:none}.article table{box-shadow:0 1.5px 3px rgba(0,0,0,.24),0 3px 8px rgba(0,0,0,.05);border-radius:3px}.article table th{background:#ee7a70;color:#fff}.article table td{border-top:1px solid rgba(0,0,0,.05)}.article blockquote{border-left:2px solid rgba(0,0,0,.54);color:rgba(0,0,0,.54)}.footer{background:#e84e40;color:#fff}.footer a{border:none}.copyright{color:rgba(0,0,0,.54)}.pagination a .button,.pagination a .title{color:#fff}.pagination .direction{color:hsla(0,0%,100%,.7)}.admonition{background:#29b6f6;color:#fff}.admonition pre{background:hsla(0,0%,100%,.3)}.admonition.warning{background:#e84e40}.admonition a,.admonition a:hover{color:#fff}.article{font-size:14px;line-height:1.7em}.article:after{content:" ";display:block;clear:both}.article .wrapper{padding:116px 16px 92px}.ios.standalone .article{position:absolute;top:56px;right:0;bottom:0;left:0;overflow:auto;-webkit-overflow-scrolling:touch}.ios.standalone .article .wrapper{position:relative;min-height:100%;padding-top:60px;margin-bottom:2px}.article h1{font-size:24px;line-height:1.333334em;padding:20px 0 42px}.article h2{font-size:20px;line-height:1.4em;padding-top:92px;margin-top:-56px}.ios.standalone .article h2{padding-top:36px;margin:0}.article h3,.article h4{font-size:14px;padding-top:76px;margin-top:-56px}.ios.standalone .article h3,.ios.standalone .article h4{padding-top:20px;margin-top:0}.article .headerlink{float:right;margin-left:20px;font-size:14px}h1 .article .headerlink{display:none}.article ol,.article p,.article ul{margin-top:1.5em}.article li,.article li ol,.article li ul{margin-top:.75em}.article li{margin-left:18px}.article li p{display:inline}.article ul>li:before{content:"\e602";display:block;float:left;font-family:Icon;font-size:16px;width:1.2em;margin-left:-1.2em;vertical-align:-.1em}.article p>code{white-space:nowrap;padding:2px 4px}.article kbd{display:inline-block;padding:3px 5px;line-height:10px}.article hr{margin-top:1.5em}.article img{max-width:100%}.article pre{padding:16px;margin:1.5em -16px 0;line-height:1.5em;overflow:auto;-webkit-overflow-scrolling:touch}.article table{margin:3em 0 1.5em;font-size:13px;overflow:hidden}.no-js .article table{display:inline-block;max-width:100%;overflow:auto;-webkit-overflow-scrolling:touch}.article table th{min-width:100px;font-size:12px;text-align:left}.article table td,.article table th{padding:12px 16px;vertical-align:top}.article blockquote{padding-left:16px}.article .data{margin:1.5em -16px;padding:1.5em 0;overflow:auto;-webkit-overflow-scrolling:touch;text-align:center}.article .data table{display:inline-block;margin:0 16px;text-align:left}.footer{position:absolute;bottom:0;left:0;right:0;padding:0 4px}.copyright{margin:1.5em 0}.pagination{max-width:1184px;height:92px;padding:4px 0;margin-left:auto;margin-right:auto;overflow:hidden}.pagination a{display:block;height:100%}.pagination .next,.pagination .previous{position:relative;float:left;height:100%}.pagination .previous{width:25%}.pagination .previous .direction,.pagination .previous .stretch{display:none}.pagination .next{width:75%;text-align:right}.pagination .page{display:table;position:absolute;bottom:4px}.pagination .direction{display:block;position:absolute;bottom:40px;width:100%;font-size:15px;line-height:20px;padding:0 52px}.pagination .stretch{padding:0 4px}.pagination .stretch .title{font-size:18px;padding:11px 0 13px}.admonition{margin:20px -16px 0;padding:20px 16px}.admonition>:first-child{margin-top:0}.admonition .admonition-title{font-size:20px}.admonition .admonition-title:before{content:"\e611";display:block;float:left;font-family:Icon;font-size:24px;vertical-align:-.1em;margin-right:5px}.admonition.warning .admonition-title:before{content:"\e610"}.article h3{font-weight:700}.article h4{font-weight:400;font-style:italic}.article h2 a,.article h3 a,.article h4 a,.article h5 a,.article h6 a{font-weight:400;font-style:normal}.bar{-webkit-transform:translateZ(0);transform:translateZ(0);-webkit-transition:opacity .2s cubic-bezier(.75,0,.25,1),-webkit-transform .4s cubic-bezier(.75,0,.25,1);transition:opacity .2s cubic-bezier(.75,0,.25,1),-webkit-transform .4s cubic-bezier(.75,0,.25,1);transition:opacity .2s cubic-bezier(.75,0,.25,1),transform .4s cubic-bezier(.75,0,.25,1);transition:opacity .2s cubic-bezier(.75,0,.25,1),transform .4s cubic-bezier(.75,0,.25,1),-webkit-transform .4s cubic-bezier(.75,0,.25,1)}#toggle-search:checked~.header .bar,.toggle-search .bar{-webkit-transform:translate3d(0,-56px,0);transform:translate3d(0,-56px,0)}.bar.search .button-reset{-webkit-transform:scale(.5);transform:scale(.5);-webkit-transition:opacity .4s cubic-bezier(.1,.7,.1,1),-webkit-transform .4s cubic-bezier(.1,.7,.1,1);transition:opacity .4s cubic-bezier(.1,.7,.1,1),-webkit-transform .4s cubic-bezier(.1,.7,.1,1);transition:opacity .4s cubic-bezier(.1,.7,.1,1),transform .4s cubic-bezier(.1,.7,.1,1);transition:opacity .4s cubic-bezier(.1,.7,.1,1),transform .4s cubic-bezier(.1,.7,.1,1),-webkit-transform .4s cubic-bezier(.1,.7,.1,1);opacity:0}.bar.search.non-empty .button-reset{-webkit-transform:scale(1);transform:scale(1);opacity:1}.results{-webkit-transition:opacity .3s .1s,width 0s .4s,height 0s .4s;transition:opacity .3s .1s,width 0s .4s,height 0s .4s}#toggle-search:checked~.main .results,.toggle-search .results{-webkit-transition:opacity .4s,width 0s,height 0s;transition:opacity .4s,width 0s,height 0s}.results .list a{-webkit-transition:background .25s;transition:background .25s}.no-csstransforms3d .bar.default{display:table}.no-csstransforms3d .bar.search{display:none;margin-top:0}.no-csstransforms3d #toggle-search:checked~.header .bar.default,.no-csstransforms3d .toggle-search .bar.default{display:none}.no-csstransforms3d #toggle-search:checked~.header .bar.search,.no-csstransforms3d .toggle-search .bar.search{display:table}.bar.search{opacity:0}.bar.search .query{background:transparent;color:rgba(0,0,0,.87)}.bar.search .query::-webkit-input-placeholder{color:rgba(0,0,0,.26)}.bar.search .query:-moz-placeholder,.bar.search .query::-moz-placeholder{color:rgba(0,0,0,.26)}.bar.search .query:-ms-input-placeholder{color:rgba(0,0,0,.26)}.bar.search .button .icon:active{background:rgba(0,0,0,.12)}.results{box-shadow:0 4px 7px rgba(0,0,0,.23),0 8px 25px rgba(0,0,0,.05);background:#fff;color:rgba(0,0,0,.87);opacity:0}#toggle-search:checked~.main .results,.toggle-search .results{opacity:1}.results .meta{background:#e84e40;color:#fff}.results .list a{border-bottom:1px solid rgba(0,0,0,.12)}.results .list a:last-child{border-bottom:none}.results .list a:active{background:rgba(0,0,0,.12)}.result span{color:rgba(0,0,0,.54)}#toggle-search:checked~.header,.toggle-search .header{background:#fff;color:rgba(0,0,0,.54)}#toggle-search:checked~.header:before,.toggle-search .header:before{background:rgba(0,0,0,.54)}#toggle-search:checked~.header .bar.default,.toggle-search .header .bar.default{opacity:0}#toggle-search:checked~.header .bar.search,.toggle-search .header .bar.search{opacity:1}.bar.search{margin-top:8px}.bar.search .query{font-size:18px;padding:13px 0;margin:0;width:100%;height:48px}.bar.search .query::-ms-clear{display:none}.results{position:fixed;top:0;left:0;width:0;height:100%;z-index:2;overflow-y:scroll;-webkit-overflow-scrolling:touch}.results .scrollable{top:56px}#toggle-search:checked~.main .results,.toggle-search .results{width:100%;overflow-y:visible}.results .meta{font-weight:700}.results .meta strong{display:block;font-size:11px;max-width:1200px;margin-left:auto;margin-right:auto;padding:16px}.results .list a{display:block}.result{max-width:1200px;margin-left:auto;margin-right:auto;padding:12px 16px 16px}.result h1{line-height:24px}.result h1,.result span{text-overflow:ellipsis;white-space:nowrap;overflow:hidden}.result span{font-size:12px}.no-csstransforms3d .results{display:none}.no-csstransforms3d #toggle-search:checked~.main .results,.no-csstransforms3d .toggle-search .results{display:block;overflow:auto}.meta{text-transform:uppercase;font-weight:700}@media only screen and (min-width:960px){.backdrop{background:#f2f2f2}.backdrop-paper:after{box-shadow:0 1.5px 3px rgba(0,0,0,.24),0 3px 8px rgba(0,0,0,.05)}.button-menu{display:none}.drawer{float:left;height:auto;margin-bottom:96px;padding-top:80px}.drawer,.drawer .scrollable{position:static}.article{margin-left:262px}.footer{z-index:5}.copyright{margin-bottom:64px}.results{height:auto;top:64px}.results .scrollable{position:static;max-height:413px}}@media only screen and (max-width:959px){#toggle-drawer:checked~.overlay,.toggle-drawer .overlay{width:100%;height:100%}.drawer{-webkit-transform:translate3d(-262px,0,0);transform:translate3d(-262px,0,0);-webkit-transition:-webkit-transform .25s cubic-bezier(.4,0,.2,1);transition:-webkit-transform .25s cubic-bezier(.4,0,.2,1);transition:transform .25s cubic-bezier(.4,0,.2,1);transition:transform .25s cubic-bezier(.4,0,.2,1),-webkit-transform .25s cubic-bezier(.4,0,.2,1)}.no-csstransforms3d .drawer{display:none}.drawer{background:#fff}.project{box-shadow:0 1.5px 3px rgba(0,0,0,.24),0 3px 8px rgba(0,0,0,.05);background:#e84e40;color:#fff}.drawer{position:fixed;z-index:5}#toggle-search:checked~.main .results,.drawer,.toggle-search .results{height:100%}}@media only screen and (min-width:720px){.header{height:64px;padding:8px}.header .stretch{padding:0 16px}.header .stretch .title{font-size:20px;padding:12px 0}.project .name{margin:26px 0 0 5px}.article .wrapper{padding:128px 24px 96px}.article .data{margin:1.5em -24px}.article .data table{margin:0 24px}.article h2{padding-top:100px;margin-top:-64px}.ios.standalone .article h2{padding-top:28px;margin-top:8px}.article h3,.article h4{padding-top:84px;margin-top:-64px}.ios.standalone .article h3,.ios.standalone .article h4{padding-top:20px;margin-top:0}.article pre{padding:1.5em 24px;margin:1.5em -24px 0}.footer{padding:0 8px}.pagination{height:96px;padding:8px 0}.pagination .direction{padding:0 56px;bottom:40px}.pagination .stretch{padding:0 8px}.admonition{margin:20px -24px 0;padding:20px 24px}.bar.search .query{font-size:20px;padding:12px 0}.results .scrollable{top:64px}.results .meta strong{padding:16px 24px}.result{padding:16px 24px 20px}}@media only screen and (min-width:1200px){.header{width:100%}.drawer .scrollable .wrapper hr{width:48px}}@media only screen and (orientation:portrait){.ios.standalone .header{height:76px;padding-top:24px}.ios.standalone .header:before{content:" ";position:absolute;top:0;left:0;z-index:4;width:100%;height:20px}.ios.standalone .drawer .scrollable{top:124px}.ios.standalone .project{padding-top:20px}.ios.standalone .project:before{content:" ";position:absolute;top:0;left:0;z-index:4;width:100%;height:20px}.ios.standalone .article{position:absolute;top:76px;right:0;bottom:0;left:0}.ios.standalone .results .scrollable{top:76px}}@media only screen and (orientation:portrait) and (min-width:720px){.ios.standalone .header{height:84px;padding-top:28px}.ios.standalone .results .scrollable{top:84px}}@media only screen and (max-width:719px){.bar .path{display:none}}@media only screen and (max-width:479px){.button-github,.button-twitter{display:none}}@media only screen and (min-width:720px) and (max-width:959px){.header .stretch{padding:0 24px}}@media only screen and (min-width:480px){.pagination .next,.pagination .previous{width:50%}.pagination .previous .direction{display:block}.pagination .previous .stretch{display:table}}@media print{.drawer,.footer,.header,.headerlink{display:none}.article .wrapper{padding-top:0}.article pre,.article pre *{color:rgba(0,0,0,.87)!important}.article pre{border:1px solid rgba(0,0,0,.12)}.article table{border-radius:none;box-shadow:none}.article table th{color:#e84e40}}
+/*
+ * Copyright (c) 2016 Martin Donath <martin.donath@squidfunk.com>
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to
+ * deal in the Software without restriction, including without limitation the
+ * rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+ * sell copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+ * IN THE SOFTWARE.
+ */
+/* ----------------------------------------------------------------------------
+ * Dependencies
+ * ------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------
+ * Application
+ * ------------------------------------------------------------------------- */
+/*
+ * Copyright (c) 2016 Martin Donath <martin.donath@squidfunk.com>
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to
+ * deal in the Software without restriction, including without limitation the
+ * rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+ * sell copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+ * IN THE SOFTWARE.
+ */
+/* ----------------------------------------------------------------------------
+ * Resets
+ * ------------------------------------------------------------------------- */
+/*
+ * Enfore correct box model - the prefixed versions are necessary for older
+ * browsers, i.e. Chrome < 10, Firefox < 29, Safari < 6 and Android < 4
+ */
+html {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box; }
+
+/*
+ * All elements shall inherit the document default
+ */
+*, *:before, *:after {
+  box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  -webkit-box-sizing: inherit; }
+
+/*
+ * 16px --> 10px, browser default
+ */
+html {
+  font-size: 62.5%;
+  -webkit-text-size-adjust: none;
+      -ms-text-size-adjust: none;
+          text-size-adjust: none; }
+
+/*
+ * Reset spacing and borders for all tags
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, main,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
+/*
+ * Enforce correct rendering of main element - missing in user agent stylesheet
+ * of IE11 on Windows 7.
+ */
+main {
+  display: block; }
+
+/*
+ * Reset list styles
+ */
+ul {
+  list-style: none; }
+
+/*
+ * Reset table styles
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*
+ * Reset table cell styles
+ */
+td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+/*
+ * Reset (native) button styles
+ */
+button {
+  outline: 0;
+  padding: 0;
+  background: transparent;
+  border: none;
+  font-size: inherit; }
+
+/*
+ * Reset (native) input styles
+ */
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  outline: none;
+  border: none; }
+
+/*
+ * Reset link styles
+ */
+a {
+  text-decoration: none;
+  color: inherit; }
+
+/*
+ * Reset tap outlines on iOS and Android
+ */
+a, button, label, input {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-tap-highlight-color: transparent; }
+
+/*
+ * Reset headlines
+ */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: inherit; }
+
+/*
+ * Copyright (c) 2016 Martin Donath <martin.donath@squidfunk.com>
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to
+ * deal in the Software without restriction, including without limitation the
+ * rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+ * sell copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+ * IN THE SOFTWARE.
+ */
+/* ----------------------------------------------------------------------------
+ * Palette
+ * ------------------------------------------------------------------------- */
+/*
+ * Primary and accent color
+ */
+/*
+ * Black opacities
+ */
+/*
+ * White opacities
+ */
+/*
+ * Copyright (c) 2016 Martin Donath <martin.donath@squidfunk.com>
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to
+ * deal in the Software without restriction, including without limitation the
+ * rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+ * sell copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+ * IN THE SOFTWARE.
+ */
+/* ----------------------------------------------------------------------------
+ * Code highlighter
+ * ------------------------------------------------------------------------- */
+/*
+ * Code block
+ */
+pre {
+  background: rgba(0, 0, 0, 0.05);
+  /*
+   * Ensure correct color
+   */ }
+  pre, pre code {
+    color: rgba(0, 0, 0, 0.87); }
+
+/*
+ * Operators and comments
+ */
+.o, .c, .c1, .cm {
+  color: rgba(0, 0, 0, 0.54); }
+
+/*
+ * Keywords
+ */
+.k, .kn {
+  color: #A71D5D; }
+
+/*
+ * Types and functions
+ */
+.kt, .kd {
+  color: #0086B3; }
+
+/*
+ * Function definition
+ */
+.nf, .n.f {
+  color: #795da3; }
+
+/*
+ * Classes
+ */
+.nx {
+  color: #0086b3; }
+
+/*
+ * Strings
+ */
+.s, .s1 {
+  color: #183691; }
+
+/*
+ * Constants and numbers
+ */
+.mi, .bp {
+  color: #9575CD; }
+
+/*
+ * Copyright (c) 2016 Martin Donath <martin.donath@squidfunk.com>
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to
+ * deal in the Software without restriction, including without limitation the
+ * rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+ * sell copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+ * IN THE SOFTWARE.
+ */
+/* ----------------------------------------------------------------------------
+ * Font faces - defined in base.html for correct path resolution
+ * ------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------
+ * Representational classes
+ * ------------------------------------------------------------------------- */
+/*
+ * Base icon class
+ */
+.icon {
+  font-family: 'Icon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+/*
+ * Magnifying glass
+ */
+.icon-search:before {
+  content: "\e600"; }
+
+/*
+ * Back arrow
+ */
+.icon-back:before {
+  content: "\e601"; }
+
+/*
+ * Link indicator
+ */
+.icon-link:before {
+  content: "\e602"; }
+
+/*
+ * Close button
+ */
+.icon-close:before {
+  content: "\e603"; }
+
+/*
+ * Hamburger icon
+ */
+.icon-menu:before {
+  content: "\e604"; }
+
+/*
+ * Forward arrow
+ */
+.icon-forward:before {
+  content: "\e605"; }
+
+/*
+ * Twitter icon
+ */
+.icon-twitter:before {
+  content: "\e606"; }
+
+/*
+ * GitHub icon
+ */
+.icon-github:before {
+  content: "\e607"; }
+
+/*
+ * Download icon
+ */
+.icon-download:before {
+  content: "\e608"; }
+
+/*
+ * Star icon
+ */
+.icon-star:before {
+  content: "\e609"; }
+
+/*
+ * Warning icon
+ */
+.icon-warning:before {
+  content: "\e610"; }
+
+/*
+ * Star icon
+ */
+.icon-note:before {
+  content: "\e611"; }
+
+/*
+ * Copyright (c) 2016 Martin Donath <martin.donath@squidfunk.com>
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to
+ * deal in the Software without restriction, including without limitation the
+ * rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+ * sell copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+ * IN THE SOFTWARE.
+ */
+/* ----------------------------------------------------------------------------
+ * Defaults
+ * ------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------
+ * Helper functions
+ * ------------------------------------------------------------------------- */
+/*
+ * Choose minimum and maximum device widths.
+ */
+/*
+ * Select minimum and maximum widths for a device breakpoint.
+ */
+/* ----------------------------------------------------------------------------
+ * Mixins for numeric breakpoints
+ * ------------------------------------------------------------------------- */
+/*
+ * A minimum-maximum media query breakpoint.
+ */
+/*
+ * An orientation media query breakpoint.
+ */
+/*
+ * A maximum-aspect-ratio media query breakpoint.
+ */
+/* ----------------------------------------------------------------------------
+ * Mixins for device breakpoints
+ * ------------------------------------------------------------------------- */
+/*
+ * A minimum-maximum media query device breakpoint.
+ */
+/*
+ * A minimum media query device breakpoint.
+ */
+/*
+ * A maximum media query device breakpoint.
+ */
+/*
+ * Copyright (c) 2016 Martin Donath <martin.donath@squidfunk.com>
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to
+ * deal in the Software without restriction, including without limitation the
+ * rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+ * sell copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+ * IN THE SOFTWARE.
+ */
+/*
+ * Copyright (c) 2016 Martin Donath <martin.donath@squidfunk.com>
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to
+ * deal in the Software without restriction, including without limitation the
+ * rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+ * sell copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+ * IN THE SOFTWARE.
+ */
+/* ----------------------------------------------------------------------------
+ * Base animation
+ * ------------------------------------------------------------------------- */
+/*
+ * Animate color on hover
+ */
+a {
+  -webkit-transition: color .25s;
+  transition: color .25s; }
+
+/*
+ * Overlay
+ */
+.overlay {
+  -webkit-transition: opacity .25s, width   .0s .25s, height  .0s .25s;
+  transition: opacity .25s, width   .0s .25s, height  .0s .25s;
+  /*
+   * Expanded drawer
+   */ }
+  #toggle-drawer:checked ~ .overlay,
+  .toggle-drawer .overlay {
+    -webkit-transition: opacity .25s, width   .0s, height  .0s;
+    transition: opacity .25s, width   .0s, height  .0s; }
+
+/*
+ * Application header - check for javascript to omit flashing
+ */
+.js .header {
+  -webkit-transition: background .6s, color      .6s;
+  transition: background .6s, color      .6s;
+  /*
+   * Status bar
+   */ }
+  .js .header:before {
+    -webkit-transition: background .6s;
+    transition: background .6s; }
+
+/*
+ * Extended visible touch area on icon
+ */
+.button .icon {
+  -webkit-transition: background .25s;
+  transition: background .25s; }
+
+/*
+ * Copyright (c) 2016 Martin Donath <martin.donath@squidfunk.com>
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to
+ * deal in the Software without restriction, including without limitation the
+ * rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+ * sell copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+ * IN THE SOFTWARE.
+ */
+/* ----------------------------------------------------------------------------
+ * Base appearance
+ * ------------------------------------------------------------------------- */
+/*
+ * Device specific background hacks related to rubberband
+ */
+body {
+  color: rgba(0, 0, 0, 0.87);
+  /* Hack [Chrome, Opera]: Set background color in Chrome and Opera */
+  /*
+   * Don't tint menu bar on iOS
+   */ }
+  @supports (-webkit-appearance: none) {
+    body {
+      background: #e84e40; } }
+  .ios body {
+    background: white; }
+
+/*
+ * Horizontal separators
+ */
+hr {
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.12); }
+
+/*
+ * Toggle button
+ */
+.toggle-button {
+  cursor: pointer;
+  color: inherit; }
+
+/*
+ * Backdrop
+ */
+.backdrop {
+  background: white;
+  /* [tablet landscape+]: Introduce paper with shadow */ }
+
+/*
+ * Backdrop paper with shadow
+ */
+.backdrop-paper:after {
+  background: white;
+  /* [tablet landscape+]: Add drop shadow */ }
+
+/*
+ * Overlay
+ */
+.overlay {
+  background: rgba(0, 0, 0, 0.54);
+  opacity: 0;
+  /*
+   * Expanded drawer
+   */ }
+  #toggle-drawer:checked ~ .overlay,
+  .toggle-drawer .overlay {
+    opacity: 1; }
+
+/*
+ * Application header
+ */
+.header {
+  box-shadow: 0 1.5px 3px rgba(0, 0, 0, 0.24), 0 3px 8px rgba(0, 0, 0, 0.05);
+  background: #e84e40;
+  color: white;
+  /*
+   * Add status bar overlay for iOS web application
+   */ }
+  .ios.standalone .header:before {
+    background: rgba(0, 0, 0, 0.12); }
+
+/*
+ * Navigation path within header bar
+ */
+.bar .path {
+  color: rgba(255, 255, 255, 0.7); }
+
+/*
+ * Draw round area around icon on touch
+ */
+.button .icon {
+  border-radius: 100%; }
+
+/*
+ * Pushed/clicked icon
+ */
+.button .icon:active {
+  background: rgba(255, 255, 255, 0.12); }
+
+/*
+ * Copyright (c) 2016 Martin Donath <martin.donath@squidfunk.com>
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to
+ * deal in the Software without restriction, including without limitation the
+ * rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+ * sell copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+ * IN THE SOFTWARE.
+ */
+/* ----------------------------------------------------------------------------
+ * Base layout
+ * ------------------------------------------------------------------------- */
+/*
+ * Stretch container to viewport
+ */
+html {
+  height: 100%; }
+
+/*
+ * Stretch body to container and leave room for sticky footer.
+ */
+body {
+  position: relative;
+  min-height: 100%; }
+
+/*
+ * Horizontal separators
+ */
+hr {
+  display: block;
+  height: 1px;
+  padding: 0;
+  margin: 0; }
+
+/*
+ * Lock body (e.g. in search mode)
+ */
+.locked {
+  height: 100%;
+  overflow: hidden; }
+
+/*
+ * Scrollable container
+ */
+.scrollable {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  /*
+   * Content wrapper
+   */ }
+  .scrollable .wrapper {
+    height: 100%;
+    /* Hack [iOS]: Force overflow scrolling */ }
+    .ios .scrollable .wrapper {
+      margin-bottom: 2px; }
+
+/*
+ * Toggle states and button
+ */
+.toggle {
+  display: none;
+  /*
+   * Toggle button
+   */ }
+  .toggle-button {
+    display: block; }
+
+/*
+ * Backdrop
+ */
+.backdrop {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1; }
+
+/*
+ * Backdrop paper container
+ */
+.backdrop-paper {
+  max-width: 1200px;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  /*
+   * Actual paper
+   */ }
+  .backdrop-paper:after {
+    content: " ";
+    display: block;
+    height: 100%;
+    margin-left: 262px; }
+
+/*
+ * Overlay
+ */
+.overlay {
+  position: fixed;
+  top: 0;
+  width: 0;
+  height: 0;
+  z-index: 4;
+  /* [tablet landscape-]: Trigger overlay */ }
+
+/*
+ * Application header stays always on top
+ */
+.header {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  height: 56px;
+  padding: 4px;
+  overflow: hidden;
+  /* [tablet portait+]: Larger header bar */
+  /* [screen+]: Stretch to screen */
+  /*
+   * Absolute positioning in iOS web application
+   */ }
+  .ios.standalone .header {
+    position: absolute;
+    /* [orientation: portrait]: Account for status bar in portrait mode */ }
+
+/*
+ * Header bar
+ */
+.bar {
+  display: table;
+  max-width: 1184px;
+  margin-left: auto;
+  margin-right: auto;
+  /*
+   * Links should span icons entirely
+   */
+  /*
+   * Hide search button, in case javascript is not available.
+   */
+  /*
+   * Navigation path
+   */ }
+  .bar a {
+    display: block; }
+  .no-js .bar .button-search {
+    display: none; }
+  .bar .path {
+    /*
+     * Correct icon alignment
+     */
+    /* [tablet portait-]: Hide path */ }
+    .bar .path .icon:before {
+      vertical-align: -1.5px; }
+
+/*
+ * Buttons
+ */
+.button {
+  display: table-cell;
+  vertical-align: top;
+  width: 1%;
+  /*
+   * Remove native spacing on button
+   */
+  /*
+   * Button icons
+   */ }
+  .button button {
+    margin: 0;
+    padding: 0;
+    /* Hack [IE]: Remove button offset in active state */ }
+    .button button:active:before {
+      position: relative;
+      top: 0;
+      left: 0; }
+  .button .icon {
+    display: inline-block;
+    font-size: 24px;
+    padding: 8px;
+    margin: 4px; }
+
+/*
+ * Hide source and twitter button
+ */
+.button-github,
+.button-twitter {
+  /* [mobile landscape-]: Hide button */ }
+
+/*
+ * Hide menu button
+ */
+.button-menu {
+  /* [tablet landscape+]: Hide button */ }
+
+/*
+ * Stretch content to remaining space
+ */
+.stretch {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  /*
+   * Set vertical spacing for header
+   */
+  /*
+   * Title with ellipsis on overflow
+   */ }
+  .header .stretch {
+    padding: 0 20px;
+    /* [tablet portait]: Increase vertical spacing */
+    /* [tablet portait+]: Account for missing menu icon */ }
+  .stretch .title {
+    display: table-cell;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    /*
+     * Increase header font size
+     */ }
+    .header .stretch .title {
+      font-size: 18px;
+      padding: 13px 0;
+      /* [tablet portait+]: Slightly larger typography in header */ }
+
+/*
+ * Main content
+ */
+.main {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto; }
+
+/*
+ * Copyright (c) 2016 Martin Donath <martin.donath@squidfunk.com>
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to
+ * deal in the Software without restriction, including without limitation the
+ * rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+ * sell copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+ * IN THE SOFTWARE.
+ */
+/* ----------------------------------------------------------------------------
+ * Base typography
+ * ------------------------------------------------------------------------- */
+/*
+ * Default font styles
+ */
+body, input {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  /* Enable font-smoothing in Webkit and FF */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /*
+   * Use system fonts, if browser doesn't support webfonts
+   */ }
+  .no-fontface body, .no-fontface input {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+
+/*
+ * Proportional fonts
+ */
+pre, code, kbd {
+  font-family: 'Courier New', 'Courier', monospace;
+  /*
+   * Use system fonts, if browser doesn't support webfonts
+   */ }
+  .no-fontface pre, .no-fontface code, .no-fontface kbd {
+    font-family: 'Courier New', 'Courier', monospace; }
+
+/*
+ * Copyright (c) 2016 Martin Donath <martin.donath@squidfunk.com>
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to
+ * deal in the Software without restriction, including without limitation the
+ * rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+ * sell copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+ * IN THE SOFTWARE.
+ */
+/*
+ * Copyright (c) 2016 Martin Donath <martin.donath@squidfunk.com>
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to
+ * deal in the Software without restriction, including without limitation the
+ * rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+ * sell copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+ * IN THE SOFTWARE.
+ */
+/* ----------------------------------------------------------------------------
+ * Drawer animation
+ * ------------------------------------------------------------------------- */
+/*
+ * Drawer container
+ */
+.drawer {
+  /* [tablet landscape-]: Hide menu */
+  /*
+   * Expanded drawer
+   */ }
+  #toggle-drawer:checked ~ .main .drawer,
+  .toggle-drawer .drawer {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    /*
+     * Just show drawer, if browser doesn't support 3D transforms
+     */ }
+    .no-csstransforms3d #toggle-drawer:checked ~ .main .drawer, .no-csstransforms3d
+    .toggle-drawer .drawer {
+      display: block; }
+
+/*
+ * No color transition for project link
+ */
+.project {
+  -webkit-transition: none;
+  transition: none; }
+
+/*
+ * Project logo image
+ */
+.project .logo img {
+  -webkit-transition: box-shadow .4s;
+  transition: box-shadow .4s; }
+
+/*
+ * Repository buttons
+ */
+.repo a {
+  -webkit-transition: box-shadow .4s, opacity    .4s;
+  transition: box-shadow .4s, opacity    .4s; }
+
+/*
+ * Copyright (c) 2016 Martin Donath <martin.donath@squidfunk.com>
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to
+ * deal in the Software without restriction, including without limitation the
+ * rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+ * sell copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+ * IN THE SOFTWARE.
+ */
+/* ----------------------------------------------------------------------------
+ * Drawer appearance
+ * ------------------------------------------------------------------------- */
+/*
+ * Drawer container
+ */
+.drawer {
+  /* [tablet landscape-]: Light gray background */
+  /*
+   * Color links
+   */
+  /*
+   * Color anchors menu
+   */
+  /*
+   * Main sections
+   */ }
+  .drawer .toc a {
+    /*
+     * Current active element
+     */
+    /*
+     * Hovered link
+     */ }
+    .drawer .toc a.current {
+      color: #e84e40; }
+    .drawer .toc a:hover, .drawer .toc a:focus {
+      color: #e84e40; }
+  .drawer .anchor a {
+    border-left: 2px solid #e84e40; }
+  .drawer .section {
+    color: rgba(0, 0, 0, 0.54); }
+
+/*
+ * Project information
+ */
+.project {
+  /* [tablet landscape-]: Add drop shadow */
+  /*
+   * Add status bar overlay for iOS web application
+   */
+  /*
+   * Project logo
+   */
+  /*
+   * Scale logo on hover
+   */ }
+  .ios.standalone .project:before {
+    background: rgba(0, 0, 0, 0.12); }
+  .project .logo img {
+    background: white;
+    border-radius: 100%; }
+  .project:hover .logo img,
+  .project:focus .logo img {
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.23), 0 8px 25px rgba(0, 0, 0, 0.05); }
+
+/*
+ * Repository buttons
+ */
+.repo a {
+  background: #00bfa5;
+  color: white;
+  border-radius: 3px;
+  /*
+   * Hovered button
+   */
+  /*
+   * Stars
+   */ }
+  .repo a:hover, .repo a:focus {
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.23), 0 8px 25px rgba(0, 0, 0, 0.05);
+    opacity: 0.8; }
+  .repo a .count {
+    background: rgba(0, 0, 0, 0.26);
+    color: white;
+    border-radius: 0px 3px 3px 0px;
+    /*
+     * Star bubble
+     */ }
+    .repo a .count:before {
+      border-width: 15px 5px 15px 0;
+      border-color: transparent rgba(0, 0, 0, 0.26);
+      border-style: solid; }
+
+/*
+ * Copyright (c) 2016 Martin Donath <martin.donath@squidfunk.com>
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to
+ * deal in the Software without restriction, including without limitation the
+ * rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+ * sell copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+ * IN THE SOFTWARE.
+ */
+/* ----------------------------------------------------------------------------
+ * Drawer layout
+ * ------------------------------------------------------------------------- */
+/*
+ * Drawer container
+ */
+.drawer {
+  width: 262px;
+  font-size: 13px;
+  line-height: 1.0em;
+  /* [tablet landscape-]: Fixed positioning */
+  /* [tablet landscape+]: Inline with content */
+  /* Hack [iOS]: Mitigate scrolling of parent container on boundaries */
+  /*
+   * Links to articles
+   */
+  /*
+   * Links to anchors
+   */
+  /*
+   * Nested links and anchors
+   */
+  /*
+   * Nested anchors
+   */
+  /*
+   * Main sections
+   */
+  /*
+   * Scrollable container
+   */ }
+  .ios .drawer {
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch; }
+  .drawer .toc li a {
+    display: block;
+    padding: 14.5px 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+  .drawer .toc li.anchor a {
+    margin-left: 12px;
+    padding: 10px 24px 10px 12px; }
+  .drawer .toc li ul {
+    margin-left: 12px; }
+  .drawer .current + ul {
+    margin-bottom: 9px; }
+  .drawer .section {
+    display: block;
+    padding: 14.5px 24px; }
+  .drawer .scrollable {
+    top: 104px;
+    z-index: -1;
+    /* [tablet landscape+]: Revert fixed positioning */
+    /*
+     * Leave room for status bar in iOS web application
+     */
+    /*
+     * Content wrapper
+     */ }
+    .ios.standalone .drawer .scrollable {
+      /* [orientation: portrait]: Account for status bar in portrait mode */ }
+    .drawer .scrollable .wrapper {
+      height: auto;
+      min-height: 100%;
+      /*
+       * Add spacing at top and bottom of separator
+       */
+      /*
+       * Add spacing at top and bottom of top level navigation
+       */ }
+      .drawer .scrollable .wrapper hr {
+        margin: 12px 0;
+        /* [screen+]: Shorten separator */
+        /* Hack [IE]: Left-align horizontal rule */
+        margin-right: auto; }
+      .drawer .scrollable .wrapper .toc {
+        margin: 12px 0; }
+
+/*
+ * Project information
+ */
+.project {
+  display: block;
+  /*
+   * Leave room for status bar in iOS web application
+   */
+  /*
+   * Project banner
+   */
+  /*
+   * Project logo
+   */
+  /*
+   * Project name
+   */
+  /*
+   * Shrink font, if a logo is given.
+   */ }
+  .ios.standalone .project {
+    /* [orientation: portrait]: Account for status bar in portrait mode */ }
+  .project .banner {
+    display: table;
+    width: 100%;
+    height: 104px;
+    padding: 20px; }
+  .project .logo {
+    display: table-cell;
+    width: 64px;
+    padding-right: 12px;
+    /*
+     * Project logo image
+     */ }
+    .project .logo img {
+      display: block;
+      width: 64px;
+      height: 64px; }
+  .project .name {
+    display: table-cell;
+    padding-left: 4px;
+    font-size: 14px;
+    line-height: 1.25em;
+    vertical-align: middle;
+    /* [tablet portait+]: Slightly larger project name */ }
+  .project .logo + .name {
+    font-size: 12px; }
+
+/*
+ * Repository
+ */
+.repo {
+  margin: 24px 0;
+  text-align: center;
+  /*
+   * Inline buttons
+   */
+  /*
+   * Buttons
+   */ }
+  .repo li {
+    display: inline-block;
+    padding-right: 12px;
+    white-space: nowrap;
+    /*
+     * No padding on last button
+     */ }
+    .repo li:last-child {
+      padding-right: 0; }
+  .repo a {
+    display: inline-block;
+    padding: 0px 10px 0px 6px;
+    font-size: 12px;
+    line-height: 30px;
+    height: 30px;
+    /*
+     * Slightly larger icons
+     */
+    /*
+     * Stars
+     */ }
+    .repo a .icon {
+      font-size: 18px;
+      vertical-align: -3px; }
+    .repo a .count {
+      display: inline-block;
+      position: relative;
+      padding: 0px 8px 0 4px;
+      margin: 0 -10px 0 8px;
+      font-size: 12px;
+      /*
+       * Star bubble
+       */
+      /*
+       * Hide count, in case javascript is not available.
+       */ }
+      .repo a .count:before {
+        content: " ";
+        display: block;
+        position: absolute;
+        top: 0px;
+        left: -5px; }
+      .no-js .repo a .count {
+        display: none; }
+
+/*
+ * Copyright (c) 2016 Martin Donath <martin.donath@squidfunk.com>
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to
+ * deal in the Software without restriction, including without limitation the
+ * rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+ * sell copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+ * IN THE SOFTWARE.
+ */
+/* ----------------------------------------------------------------------------
+ * Drawer typography
+ * ------------------------------------------------------------------------- */
+/*
+ * Drawer container
+ */
+.drawer {
+  /*
+   * Links to articles
+   */
+  /*
+   * Links to chapters inside the current article
+   */
+  /*
+   * Main sections
+   */ }
+  .drawer .toc li a {
+    font-weight: 700; }
+  .drawer .toc li.anchor a {
+    font-weight: 400; }
+  .drawer .section {
+    font-weight: 700; }
+
+/*
+ * Repository buttons
+ */
+.repo a {
+  text-transform: uppercase;
+  font-weight: 700;
+  /*
+   * Stars
+   */ }
+  .repo a .count {
+    text-transform: none;
+    font-weight: 700; }
+
+/*
+ * Copyright (c) 2016 Martin Donath <martin.donath@squidfunk.com>
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to
+ * deal in the Software without restriction, including without limitation the
+ * rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+ * sell copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+ * IN THE SOFTWARE.
+ */
+/*
+ * Copyright (c) 2016 Martin Donath <martin.donath@squidfunk.com>
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to
+ * deal in the Software without restriction, including without limitation the
+ * rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+ * sell copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+ * IN THE SOFTWARE.
+ */
+/* ----------------------------------------------------------------------------
+ * Article animation
+ * ------------------------------------------------------------------------- */
+/*
+ * Fade color after highlighting
+ */
+pre span {
+  -webkit-transition: color .25s;
+  transition: color .25s; }
+
+/*
+ * Copyright and theme information
+ */
+.copyright {
+  /*
+   * Animate color on hover
+   */ }
+  .copyright a {
+    -webkit-transition: color .25s;
+    transition: color .25s; }
+
+/*
+ * Copyright (c) 2016 Martin Donath <martin.donath@squidfunk.com>
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to
+ * deal in the Software without restriction, including without limitation the
+ * rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+ * sell copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+ * IN THE SOFTWARE.
+ */
+/* ----------------------------------------------------------------------------
+ * Article appearance
+ * ------------------------------------------------------------------------- */
+/*
+ * Article
+ */
+.article {
+  /*
+   * Differing top and bottom rubberband backgrounds in iOS web application
+   */
+  /*
+   * Headlines, chapters, links and inline code
+   */
+  /*
+   * Inline code
+   */
+  /*
+   * Keyboard tags
+   */
+  /*
+   * Lower border for main headline
+   */
+  /*
+   * Underline links
+   */
+  /*
+   * Hovered and focused links
+   */
+  /*
+   * Light permalinks
+   */
+  /*
+   * Data tables
+   */
+  /*
+   * Blockquote styles
+   */ }
+  .ios.standalone .article {
+    background: -webkit-linear-gradient(top, white 50%, #e84e40 50%);
+    background: linear-gradient(to bottom, white 50%, #e84e40 50%);
+    /* Hack [iOS]: Mitigate black bounding box with linear gradient */ }
+    .ios.standalone .article .wrapper {
+      background: -webkit-linear-gradient(top, white 50%, white 50%);
+      background: linear-gradient(to bottom, white 50%, white 50%); }
+  .article h1, .article h2, .article a {
+    color: #e84e40; }
+  .article code {
+    background: #eee; }
+  .article kbd {
+    color: #555;
+    background-color: #fcfcfc;
+    border: solid 1px #ccc;
+    border-bottom-color: #bbb;
+    border-radius: 3px;
+    box-shadow: inset 0 -1px 0 #bbb; }
+  .article h1 {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12); }
+  .article a {
+    border-bottom: 1px dotted; }
+  .article a:hover, .article a:focus {
+    color: #00bfa5; }
+  .article .headerlink {
+    color: rgba(0, 0, 0, 0.26);
+    border: none; }
+  .article table {
+    box-shadow: 0 1.5px 3px rgba(0, 0, 0, 0.24), 0 3px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 3px;
+    /*
+     * Table heading
+     */
+    /*
+     * Table cell
+     */ }
+    .article table th {
+      background: #ee7a70;
+      color: white; }
+    .article table td {
+      border-top: 1px solid rgba(0, 0, 0, 0.05); }
+  .article blockquote {
+    border-left: 2px solid rgba(0, 0, 0, 0.54);
+    color: rgba(0, 0, 0, 0.54); }
+
+/*
+ * Article footer
+ */
+.footer {
+  background: #e84e40;
+  color: white;
+  /*
+   * Remove bottom border on links
+   */ }
+  .footer a {
+    border: none; }
+
+/*
+ * Copyright and theme information
+ */
+.copyright {
+  color: rgba(0, 0, 0, 0.54); }
+
+/*
+ * Pagination
+ */
+.pagination {
+  /*
+   * Inherit color for links
+   */
+  /*
+   * Smaller font size for direction
+   */ }
+  .pagination a .title, .pagination a .button {
+    color: white; }
+  .pagination .direction {
+    color: rgba(255, 255, 255, 0.7); }
+
+/*
+ * Admonition support
+ */
+.admonition {
+  background: #29b6f6;
+  color: white;
+  /*
+   * Embedded code blocks
+   */
+  /*
+   * A warning hint
+   */
+  /*
+   * Headlines, chapters, links and inline code
+   */ }
+  .admonition pre {
+    background: rgba(255, 255, 255, 0.3); }
+  .admonition.warning {
+    background: #e84e40; }
+  .admonition a, .admonition a:hover {
+    color: white; }
+
+/*
+ * Copyright (c) 2016 Martin Donath <martin.donath@squidfunk.com>
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to
+ * deal in the Software without restriction, including without limitation the
+ * rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+ * sell copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+ * IN THE SOFTWARE.
+ */
+/* ----------------------------------------------------------------------------
+ * Article layout
+ * ------------------------------------------------------------------------- */
+/*
+ * Article
+ */
+.article {
+  font-size: 14px;
+  line-height: 1.7em;
+  /* [tablet landscape+]: Indent to account for drawer */
+  /*
+   * Clearfix
+   */
+  /*
+   * Article wrapper
+   */
+  /*
+   * Enable overflow scrolling in iOS web application
+   */
+  /*
+   * Article headline
+   */
+  /*
+   * Article chapters
+   */
+  /*
+   * Sub headlines
+   */
+  /*
+   * Align permalinks on the right
+   */
+  /*
+   * Paragraphs and section titles
+   */
+  /*
+   * Smaler top spacing for nested lists
+   */
+  /*
+   * List elements
+   */
+  /*
+   * Add icon for elements of an unordered list
+   */
+  /*
+   * Inline code snippets must not wrap
+   */
+  /*
+   * Keyboard tags
+   */
+  /*
+   * Add spacing at top of separator
+   */
+  /*
+   * Limit images to article container
+   */
+  /*
+   * Code listing container
+   */
+  /*
+   * Data tables
+   */
+  /*
+   * Blockquote styles
+   */
+  /*
+   * Data table wrapper, in case javascript is available
+   */
+  /* [tablet portait+]: Increase spacing */ }
+  .article:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  .article .wrapper {
+    padding: 116px 16px 92px;
+    /* [tablet portait+]: Increase top spacing */ }
+  .ios.standalone .article {
+    position: absolute;
+    top: 56px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    /* [orientation: portrait]: Account for status bar in portrait mode */
+    /*
+     * Article wrapper
+     */ }
+    .ios.standalone .article .wrapper {
+      position: relative;
+      min-height: 100%;
+      padding-top: 60px;
+      margin-bottom: 2px; }
+  .article h1 {
+    font-size: 24px;
+    line-height: 1.333334em;
+    padding: 20px 0 42px; }
+  .article h2 {
+    font-size: 20px;
+    line-height: 1.4em;
+    padding-top: 92px;
+    margin-top: -56px;
+    /*
+     * No offset correction in iOS web application
+     */ }
+    .ios.standalone .article h2 {
+      padding-top: 36px;
+      margin: 0; }
+  .article h3, .article h4 {
+    font-size: 14px;
+    padding-top: 76px;
+    margin-top: -56px;
+    /*
+     * No offset correction in iOS web application
+     */ }
+    .ios.standalone .article h3, .ios.standalone .article h4 {
+      padding-top: 20px;
+      margin-top: 0; }
+  .article .headerlink {
+    float: right;
+    margin-left: 20px;
+    font-size: 14px;
+    /*
+     * Hide permalink to main headline
+     */ }
+    h1 .article .headerlink {
+      display: none; }
+  .article p, .article ul, .article ol {
+    margin-top: 1.5em; }
+  .article li ul, .article li ol {
+    margin-top: 0.75em; }
+  .article li {
+    margin-top: 0.75em;
+    margin-left: 18px;
+    /*
+     * Inline paragraphs in list elements
+     */ }
+    .article li p {
+      display: inline; }
+  .article ul > li:before {
+    content: "\e602";
+    display: block;
+    float: left;
+    font-family: 'Icon';
+    font-size: 16px;
+    width: 1.2em;
+    margin-left: -1.2em;
+    vertical-align: -0.1em; }
+  .article p > code {
+    white-space: nowrap;
+    padding: 2px 4px; }
+  .article kbd {
+    display: inline-block;
+    padding: 3px 5px;
+    line-height: 10px; }
+  .article hr {
+    margin-top: 1.5em; }
+  .article img {
+    max-width: 100%; }
+  .article pre {
+    padding: 16px;
+    margin: 1.5em -16px 0;
+    line-height: 1.5em;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch; }
+  .article table {
+    margin: 3.0em 0 1.5em;
+    font-size: 13px;
+    overflow: hidden;
+    /*
+     * The semi-cool solution, in case javascript is not available
+     */
+    /*
+     * Table heading
+     */
+    /*
+     * Table cell
+     */ }
+    .no-js .article table {
+      display: inline-block;
+      max-width: 100%;
+      overflow: auto;
+      -webkit-overflow-scrolling: touch; }
+    .article table th {
+      min-width: 100px;
+      padding: 12px 16px;
+      font-size: 12px;
+      text-align: left;
+      vertical-align: top; }
+    .article table td {
+      padding: 12px 16px;
+      vertical-align: top; }
+  .article blockquote {
+    padding-left: 16px; }
+  .article .data {
+    margin: 1.5em -16px;
+    padding: 1.5em 0;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    text-align: center;
+    /*
+     * Data table
+     */
+    /* [tablet portait+]: Increase spacing */ }
+    .article .data table {
+      display: inline-block;
+      margin: 0 16px;
+      text-align: left; }
+
+/*
+ * Article footer
+ */
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0 4px;
+  /* [tablet portait+]: Larger spacing */
+  /* [tablet landscape+]: Stretch footer to viewport */ }
+
+/*
+ * Copyright and theme information
+ */
+.copyright {
+  margin: 1.5em 0;
+  /* [tablet landscape+]: Add bottom spacing */ }
+
+/*
+ * Pagination
+ */
+.pagination {
+  max-width: 1184px;
+  height: 92px;
+  padding: 4px 0;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  /* [tablet portait+]: Larger pagination and spacing */
+  /*
+   * Links should span icons entirely
+   */
+  /*
+   * Previous and next page
+   */
+  /*
+   * Previous page
+   */
+  /*
+   * Next page
+   */
+  /*
+   * Link to page
+   */
+  /*
+   * Put direction over page title
+   */
+  /*
+   * Decrease indent for stretching content
+   */
+  /* [mobile landscape+]: Proportional width for pagination */
+  /* [tablet portrait+]: Increase vertical spacing */ }
+  .pagination a {
+    display: block;
+    height: 100%; }
+  .pagination .previous,
+  .pagination .next {
+    position: relative;
+    float: left;
+    height: 100%; }
+  .pagination .previous {
+    width: 25%;
+    /*
+     * Hide direction
+     */
+    /*
+     * Hide title
+     */ }
+    .pagination .previous .direction {
+      display: none; }
+    .pagination .previous .stretch {
+      display: none; }
+  .pagination .next {
+    width: 75%;
+    text-align: right; }
+  .pagination .page {
+    display: table;
+    position: absolute;
+    bottom: 4px; }
+  .pagination .direction {
+    display: block;
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    font-size: 15px;
+    line-height: 20px;
+    padding: 0 52px; }
+  .pagination .stretch {
+    padding: 0 4px;
+    /*
+     * Correct vertical spacing
+     */ }
+    .pagination .stretch .title {
+      font-size: 18px;
+      padding: 11px 0 13px; }
+
+/*
+ * Admonition support
+ */
+.admonition {
+  margin: 20px -16px 0;
+  padding: 20px 16px;
+  /*
+   * Remove redundant margin of first child
+   */
+  /* [tablet portait+]: Increase horizontal spacing */
+  /*
+   * Admonition title, if given
+   */
+  /*
+   * Warning icon
+   */ }
+  .admonition > :first-child {
+    margin-top: 0; }
+  .admonition .admonition-title {
+    font-size: 20px;
+    /*
+     * Default icon
+     */ }
+    .admonition .admonition-title:before {
+      content: "\e611";
+      display: block;
+      float: left;
+      font-family: 'Icon';
+      font-size: 24px;
+      vertical-align: -0.1em;
+      margin-right: 5px; }
+  .admonition.warning .admonition-title:before {
+    content: "\e610"; }
+
+/*
+ * Copyright (c) 2016 Martin Donath <martin.donath@squidfunk.com>
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to
+ * deal in the Software without restriction, including without limitation the
+ * rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+ * sell copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+ * IN THE SOFTWARE.
+ */
+/* ----------------------------------------------------------------------------
+ * Article typography
+ * ------------------------------------------------------------------------- */
+/*
+ * Article
+ */
+.article {
+  /*
+   * Third-level headlines should be bold
+   */
+  /*
+   * Fourth-level headlines should be italic
+   */ }
+  .article h3 {
+    font-weight: 700; }
+  .article h4 {
+    font-weight: 400;
+    font-style: italic; }
+
+/*
+ * Permalink support
+ */
+.article h2 a, .article h3 a, .article h4 a, .article h5 a, .article h6 a {
+  font-weight: 400;
+  font-style: normal; }
+
+/*
+ * Copyright (c) 2016 Martin Donath <martin.donath@squidfunk.com>
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to
+ * deal in the Software without restriction, including without limitation the
+ * rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+ * sell copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+ * IN THE SOFTWARE.
+ */
+/*
+ * Copyright (c) 2016 Martin Donath <martin.donath@squidfunk.com>
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to
+ * deal in the Software without restriction, including without limitation the
+ * rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+ * sell copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+ * IN THE SOFTWARE.
+ */
+/* ----------------------------------------------------------------------------
+ * Search animation
+ * ------------------------------------------------------------------------- */
+/*
+ * Animate header bar in offset and opacity
+ */
+.bar {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  -webkit-transition: opacity 0.2s cubic-bezier(0.75, 0, 0.25, 1), -webkit-transform 0.4s cubic-bezier(0.75, 0, 0.25, 1);
+  transition: opacity 0.2s cubic-bezier(0.75, 0, 0.25, 1), -webkit-transform 0.4s cubic-bezier(0.75, 0, 0.25, 1);
+  transition: opacity 0.2s cubic-bezier(0.75, 0, 0.25, 1), transform 0.4s cubic-bezier(0.75, 0, 0.25, 1);
+  transition: opacity 0.2s cubic-bezier(0.75, 0, 0.25, 1), transform 0.4s cubic-bezier(0.75, 0, 0.25, 1), -webkit-transform 0.4s cubic-bezier(0.75, 0, 0.25, 1);
+  /*
+   * Active search mode
+   */
+  /*
+   * Search animations
+   */ }
+  #toggle-search:checked ~ .header .bar,
+  .toggle-search .bar {
+    -webkit-transform: translate3d(0, -56px, 0);
+            transform: translate3d(0, -56px, 0); }
+  .bar.search {
+    /*
+     * Hide reset button by default
+     */
+    /*
+     * Show reset button if search is not empty
+     */ }
+    .bar.search .button-reset {
+      -webkit-transform: scale(0.5, 0.5);
+              transform: scale(0.5, 0.5);
+      -webkit-transition: opacity 0.4s cubic-bezier(0.1, 0.7, 0.1, 1), -webkit-transform 0.4s cubic-bezier(0.1, 0.7, 0.1, 1);
+      transition: opacity 0.4s cubic-bezier(0.1, 0.7, 0.1, 1), -webkit-transform 0.4s cubic-bezier(0.1, 0.7, 0.1, 1);
+      transition: opacity 0.4s cubic-bezier(0.1, 0.7, 0.1, 1), transform 0.4s cubic-bezier(0.1, 0.7, 0.1, 1);
+      transition: opacity 0.4s cubic-bezier(0.1, 0.7, 0.1, 1), transform 0.4s cubic-bezier(0.1, 0.7, 0.1, 1), -webkit-transform 0.4s cubic-bezier(0.1, 0.7, 0.1, 1);
+      opacity: 0; }
+    .bar.search.non-empty .button-reset {
+      -webkit-transform: scale(1, 1);
+              transform: scale(1, 1);
+      opacity: 1; }
+
+/*
+ * Search results
+ */
+.results {
+  -webkit-transition: opacity .3s .1s, width   .0s .4s, height  .0s .4s;
+  transition: opacity .3s .1s, width   .0s .4s, height  .0s .4s;
+  /*
+   * Active search mode
+   */
+  /*
+   * Search result item link
+   */ }
+  #toggle-search:checked ~ .main .results,
+  .toggle-search .results {
+    -webkit-transition: opacity .4s, width   .0s, height  .0s;
+    transition: opacity .4s, width   .0s, height  .0s; }
+  .results .list a {
+    -webkit-transition: background .25s;
+    transition: background .25s; }
+
+/*
+ * Just hide and show bars, if browser doesn't support 3D transforms
+ */
+.no-csstransforms3d {
+  /*
+   * Show default bar
+   */
+  /*
+   * Hide search bar
+   */
+  /*
+   * Active search mode
+   */ }
+  .no-csstransforms3d .bar.default {
+    display: table; }
+  .no-csstransforms3d .bar.search {
+    display: none;
+    margin-top: 0; }
+  .no-csstransforms3d #toggle-search:checked ~ .header,
+  .no-csstransforms3d .toggle-search {
+    /*
+     * Hide default bar
+     */
+    /*
+     * Show search bar
+     */ }
+    .no-csstransforms3d #toggle-search:checked ~ .header .bar.default,
+    .no-csstransforms3d .toggle-search .bar.default {
+      display: none; }
+    .no-csstransforms3d #toggle-search:checked ~ .header .bar.search,
+    .no-csstransforms3d .toggle-search .bar.search {
+      display: table; }
+
+/*
+ * Copyright (c) 2016 Martin Donath <martin.donath@squidfunk.com>
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to
+ * deal in the Software without restriction, including without limitation the
+ * rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+ * sell copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+ * IN THE SOFTWARE.
+ */
+/* ----------------------------------------------------------------------------
+ * Search appearance
+ * ------------------------------------------------------------------------- */
+/*
+ * Search bar
+ */
+.bar.search {
+  opacity: 0;
+  /*
+   * Search input
+   */
+  /*
+   * Pushed/clicked icon
+   */ }
+  .bar.search .query {
+    background: transparent;
+    color: rgba(0, 0, 0, 0.87);
+    /*
+     * Search input placeholder
+     */ }
+    .bar.search .query::-webkit-input-placeholder {
+      color: rgba(0, 0, 0, 0.26); }
+    .bar.search .query::-moz-placeholder {
+      color: rgba(0, 0, 0, 0.26); }
+    .bar.search .query:-moz-placeholder {
+      color: rgba(0, 0, 0, 0.26); }
+    .bar.search .query:-ms-input-placeholder {
+      color: rgba(0, 0, 0, 0.26); }
+  .bar.search .button .icon:active {
+    background: rgba(0, 0, 0, 0.12); }
+
+/*
+ * Search results
+ */
+.results {
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.23), 0 8px 25px rgba(0, 0, 0, 0.05);
+  background: white;
+  color: rgba(0, 0, 0, 0.87);
+  opacity: 0;
+  /*
+   * Active search mode
+   */
+  /*
+   * Search meta data
+   */
+  /*
+   * Search result item link
+   */ }
+  #toggle-search:checked ~ .main .results,
+  .toggle-search .results {
+    opacity: 1; }
+  .results .meta {
+    background: #e84e40;
+    color: white; }
+  .results .list a {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    /*
+     * Remove border on last element
+     */
+    /*
+     * Active item link
+     */ }
+    .results .list a:last-child {
+      border-bottom: none; }
+    .results .list a:active {
+      background: rgba(0, 0, 0, 0.12); }
+
+/*
+ * Article link
+ */
+.result span {
+  color: rgba(0, 0, 0, 0.54); }
+
+/*
+ * Active search bar
+ */
+#toggle-search:checked ~ .header,
+.toggle-search .header {
+  background: white;
+  color: rgba(0, 0, 0, 0.54);
+  /*
+   * Add darker status bar overlay in search mode
+   */
+  /*
+   * Fade out default header bar
+   */
+  /*
+   * Fade in search header bar
+   */ }
+  #toggle-search:checked ~ .header:before,
+  .toggle-search .header:before {
+    background: rgba(0, 0, 0, 0.54); }
+  #toggle-search:checked ~ .header .bar.default,
+  .toggle-search .header .bar.default {
+    opacity: 0; }
+  #toggle-search:checked ~ .header .bar.search,
+  .toggle-search .header .bar.search {
+    opacity: 1; }
+
+/*
+ * Copyright (c) 2016 Martin Donath <martin.donath@squidfunk.com>
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to
+ * deal in the Software without restriction, including without limitation the
+ * rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+ * sell copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+ * IN THE SOFTWARE.
+ */
+/* ----------------------------------------------------------------------------
+ * Search layout
+ * ------------------------------------------------------------------------- */
+/*
+ * Search bar
+ */
+.bar.search {
+  margin-top: 8px;
+  /*
+   * Search input
+   */ }
+  .bar.search .query {
+    font-size: 18px;
+    padding: 13px 0;
+    margin: 0;
+    width: 100%;
+    height: 48px;
+    /* [tablet portait+]: Slightly larger typo */
+    /* Hack [IE]: Hide redundant clear button */ }
+    .bar.search .query::-ms-clear {
+      display: none; }
+
+/*
+ * Search results
+ */
+.results {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  z-index: 2;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  /* [tablet landscape+]: Limit results to five entries */
+  /*
+   * Scrollable container
+   */
+  /*
+   * Active search mode
+   */
+  /*
+   * Search meta data
+   */
+  /*
+   * Search result item link
+   */ }
+  .results .scrollable {
+    top: 56px;
+    /* [tablet portait+]: Increase vertical spacing */
+    /* [tablet landscape+]: Limit results to five entries */
+    /*
+     * Leave room for status bar in iOS web application
+     */ }
+    .ios.standalone .results .scrollable {
+      /* [orientation: portrait]: Account for status bar in portrait mode */ }
+  #toggle-search:checked ~ .main .results,
+  .toggle-search .results {
+    width: 100%;
+    /* Hack [Firefox]: div doesn't collapse, unless this is applied */
+    overflow-y: visible;
+    /* [tablet portait+]: Stretch to viewport */ }
+  .results .meta {
+    font-weight: 700;
+    /*
+     * Number of results
+     */ }
+    .results .meta strong {
+      display: block;
+      font-size: 11px;
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 16px;
+      /* [tablet portait+]: Increase vertical spacing */ }
+  .results .list a {
+    display: block; }
+
+/*
+ * Search result item
+ */
+.result {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 12px 16px 16px;
+  /* [tablet portait+]: Increase vertical spacing */
+  /*
+   * Article title
+   */
+  /*
+   * Article link
+   */ }
+  .result h1 {
+    line-height: 24px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden; }
+  .result span {
+    font-size: 12px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden; }
+
+/*
+ * Switch visibility, if browser doesn't support 3D transforms
+ */
+.no-csstransforms3d {
+  /*
+   * Hide search results
+   */
+  /*
+   * Active search mode
+   */ }
+  .no-csstransforms3d .results {
+    display: none; }
+  .no-csstransforms3d #toggle-search:checked ~ .main,
+  .no-csstransforms3d .toggle-search {
+    /*
+     * Show search results
+     */ }
+    .no-csstransforms3d #toggle-search:checked ~ .main .results,
+    .no-csstransforms3d .toggle-search .results {
+      display: block;
+      overflow: auto; }
+
+/*
+ * Copyright (c) 2016 Martin Donath <martin.donath@squidfunk.com>
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to
+ * deal in the Software without restriction, including without limitation the
+ * rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+ * sell copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+ * IN THE SOFTWARE.
+ */
+/*
+ * Search meta data
+ */
+.meta {
+  text-transform: uppercase;
+  font-weight: 700; }
+
+/*
+ * Copyright (c) 2016 Martin Donath <martin.donath@squidfunk.com>
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to
+ * deal in the Software without restriction, including without limitation the
+ * rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+ * sell copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+ * IN THE SOFTWARE.
+ */
+/* ----------------------------------------------------------------------------
+ * Print overrides
+ * ------------------------------------------------------------------------- */
+/*
+ * Print styles
+ */
+
+/*
+ * Copyright (c) 2016 Martin Donath <martin.donath@squidfunk.com>
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to
+ * deal in the Software without restriction, including without limitation the
+ * rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+ * sell copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+ * IN THE SOFTWARE.
+ */
+/* ----------------------------------------------------------------------------
+ * Nothing to see here, move along
+ * ------------------------------------------------------------------------- */
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0; }
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block; }
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline; }
+
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+[hidden],
+template {
+  display: none; }
+
+a {
+  background-color: transparent; }
+
+a:active,
+a:hover {
+  outline: 0; }
+
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+b,
+strong {
+  font-weight: bold; }
+
+dfn {
+  font-style: italic; }
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+mark {
+  background: #ff0;
+  color: #000; }
+
+small {
+  font-size: 80%; }
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+img {
+  border: 0; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+figure {
+  margin: 1em 40px; }
+
+hr {
+  box-sizing: content-box;
+  height: 0; }
+
+pre {
+  overflow: auto; }
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0; }
+
+button {
+  overflow: visible; }
+
+button,
+select {
+  text-transform: none; }
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+input {
+  line-height: normal; }
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0; }
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  box-sizing: content-box; }
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+legend {
+  border: 0;
+  padding: 0; }
+
+textarea {
+  overflow: auto; }
+
+optgroup {
+  font-weight: bold; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td,
+th {
+  padding: 0; }
+
+* {
+  box-sizing: border-box; }
+
+*:before,
+*:after {
+  box-sizing: border-box; }
+
+html {
+  font-size: 10px;
+  -webkit-tap-highlight-color: transparent; }
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: #333333;
+  background-color: #fff; }
+
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit; }
+
+a {
+  color: #337ab7;
+  text-decoration: none; }
+  a:hover, a:focus {
+    color: #23527c;
+    text-decoration: underline; }
+  a:focus {
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px; }
+
+figure {
+  margin: 0; }
+
+img {
+  vertical-align: middle; }
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto; }
+
+.img-rounded {
+  border-radius: 6px; }
+
+.img-thumbnail {
+  padding: 4px;
+  line-height: 1.42857;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  display: inline-block;
+  max-width: 100%;
+  height: auto; }
+
+.img-circle {
+  border-radius: 50%; }
+
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eeeeee; }
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0; }
+
+.sr-only-focusable:active, .sr-only-focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  clip: auto; }
+
+[role="button"] {
+  cursor: pointer; }
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit; }
+  h1 small,
+  h1 .small, h2 small,
+  h2 .small, h3 small,
+  h3 .small, h4 small,
+  h4 .small, h5 small,
+  h5 .small, h6 small,
+  h6 .small,
+  .h1 small,
+  .h1 .small, .h2 small,
+  .h2 .small, .h3 small,
+  .h3 .small, .h4 small,
+  .h4 .small, .h5 small,
+  .h5 .small, .h6 small,
+  .h6 .small {
+    font-weight: normal;
+    line-height: 1;
+    color: #777777; }
+
+h1, .h1,
+h2, .h2,
+h3, .h3 {
+  margin-top: 20px;
+  margin-bottom: 10px; }
+  h1 small,
+  h1 .small, .h1 small,
+  .h1 .small,
+  h2 small,
+  h2 .small, .h2 small,
+  .h2 .small,
+  h3 small,
+  h3 .small, .h3 small,
+  .h3 .small {
+    font-size: 65%; }
+
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  margin-top: 10px;
+  margin-bottom: 10px; }
+  h4 small,
+  h4 .small, .h4 small,
+  .h4 .small,
+  h5 small,
+  h5 .small, .h5 small,
+  .h5 .small,
+  h6 small,
+  h6 .small, .h6 small,
+  .h6 .small {
+    font-size: 75%; }
+
+h1, .h1 {
+  font-size: 36px; }
+
+h2, .h2 {
+  font-size: 30px; }
+
+h3, .h3 {
+  font-size: 24px; }
+
+h4, .h4 {
+  font-size: 18px; }
+
+h5, .h5 {
+  font-size: 14px; }
+
+h6, .h6 {
+  font-size: 12px; }
+
+p {
+  margin: 0 0 10px; }
+
+.lead {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.4; }
+
+small,
+.small {
+  font-size: 85%; }
+
+mark,
+.mark {
+  background-color: #fcf8e3;
+  padding: .2em; }
+
+.text-left {
+  text-align: left; }
+
+.text-right {
+  text-align: right; }
+
+.text-center {
+  text-align: center; }
+
+.text-justify {
+  text-align: justify; }
+
+.text-nowrap {
+  white-space: nowrap; }
+
+.text-lowercase {
+  text-transform: lowercase; }
+
+.text-uppercase, .initialism {
+  text-transform: uppercase; }
+
+.text-capitalize {
+  text-transform: capitalize; }
+
+.text-muted {
+  color: #777777; }
+
+.text-primary {
+  color: #337ab7; }
+
+a.text-primary:hover,
+a.text-primary:focus {
+  color: #286090; }
+
+.text-success {
+  color: #3c763d; }
+
+a.text-success:hover,
+a.text-success:focus {
+  color: #2b542c; }
+
+.text-info {
+  color: #31708f; }
+
+a.text-info:hover,
+a.text-info:focus {
+  color: #245269; }
+
+.text-warning {
+  color: #8a6d3b; }
+
+a.text-warning:hover,
+a.text-warning:focus {
+  color: #66512c; }
+
+.text-danger {
+  color: #a94442; }
+
+a.text-danger:hover,
+a.text-danger:focus {
+  color: #843534; }
+
+.bg-primary {
+  color: #fff; }
+
+.bg-primary {
+  background-color: #337ab7; }
+
+a.bg-primary:hover,
+a.bg-primary:focus {
+  background-color: #286090; }
+
+.bg-success {
+  background-color: #dff0d8; }
+
+a.bg-success:hover,
+a.bg-success:focus {
+  background-color: #c1e2b3; }
+
+.bg-info {
+  background-color: #d9edf7; }
+
+a.bg-info:hover,
+a.bg-info:focus {
+  background-color: #afd9ee; }
+
+.bg-warning {
+  background-color: #fcf8e3; }
+
+a.bg-warning:hover,
+a.bg-warning:focus {
+  background-color: #f7ecb5; }
+
+.bg-danger {
+  background-color: #f2dede; }
+
+a.bg-danger:hover,
+a.bg-danger:focus {
+  background-color: #e4b9b9; }
+
+.page-header {
+  padding-bottom: 9px;
+  margin: 40px 0 20px;
+  border-bottom: 1px solid #eeeeee; }
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 10px; }
+  ul ul,
+  ul ol,
+  ol ul,
+  ol ol {
+    margin-bottom: 0; }
+
+.list-unstyled {
+  padding-left: 0;
+  list-style: none; }
+
+.list-inline {
+  padding-left: 0;
+  list-style: none;
+  margin-left: -5px; }
+  .list-inline > li {
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px; }
+
+dl {
+  margin-top: 0;
+  margin-bottom: 20px; }
+
+dt,
+dd {
+  line-height: 1.42857; }
+
+dt {
+  font-weight: bold; }
+
+dd {
+  margin-left: 0; }
+
+.dl-horizontal dd:before, .dl-horizontal dd:after {
+  content: " ";
+  display: table; }
+
+.dl-horizontal dd:after {
+  clear: both; }
+
+abbr[title],
+abbr[data-original-title] {
+  cursor: help;
+  border-bottom: 1px dotted #777777; }
+
+.initialism {
+  font-size: 90%; }
+
+blockquote {
+  padding: 10px 20px;
+  margin: 0 0 20px;
+  font-size: 17.5px;
+  border-left: 5px solid #eeeeee; }
+  blockquote p:last-child,
+  blockquote ul:last-child,
+  blockquote ol:last-child {
+    margin-bottom: 0; }
+  blockquote footer,
+  blockquote small,
+  blockquote .small {
+    display: block;
+    font-size: 80%;
+    line-height: 1.42857;
+    color: #777777; }
+    blockquote footer:before,
+    blockquote small:before,
+    blockquote .small:before {
+      content: '\2014 \00A0'; }
+
+.blockquote-reverse,
+blockquote.pull-right {
+  padding-right: 15px;
+  padding-left: 0;
+  border-right: 5px solid #eeeeee;
+  border-left: 0;
+  text-align: right; }
+  .blockquote-reverse footer:before,
+  .blockquote-reverse small:before,
+  .blockquote-reverse .small:before,
+  blockquote.pull-right footer:before,
+  blockquote.pull-right small:before,
+  blockquote.pull-right .small:before {
+    content: ''; }
+  .blockquote-reverse footer:after,
+  .blockquote-reverse small:after,
+  .blockquote-reverse .small:after,
+  blockquote.pull-right footer:after,
+  blockquote.pull-right small:after,
+  blockquote.pull-right .small:after {
+    content: '\00A0 \2014'; }
+
+address {
+  margin-bottom: 20px;
+  font-style: normal;
+  line-height: 1.42857; }
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px; }
+  .container:before, .container:after {
+    content: " ";
+    display: table; }
+  .container:after {
+    clear: both; }
+
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px; }
+  .container-fluid:before, .container-fluid:after {
+    content: " ";
+    display: table; }
+  .container-fluid:after {
+    clear: both; }
+
+.row {
+  margin-left: -15px;
+  margin-right: -15px; }
+  .row:before, .row:after {
+    content: " ";
+    display: table; }
+  .row:after {
+    clear: both; }
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+  float: left; }
+
+.col-xs-1 {
+  width: 8.33333%; }
+
+.col-xs-2 {
+  width: 16.66667%; }
+
+.col-xs-3 {
+  width: 25%; }
+
+.col-xs-4 {
+  width: 33.33333%; }
+
+.col-xs-5 {
+  width: 41.66667%; }
+
+.col-xs-6 {
+  width: 50%; }
+
+.col-xs-7 {
+  width: 58.33333%; }
+
+.col-xs-8 {
+  width: 66.66667%; }
+
+.col-xs-9 {
+  width: 75%; }
+
+.col-xs-10 {
+  width: 83.33333%; }
+
+.col-xs-11 {
+  width: 91.66667%; }
+
+.col-xs-12 {
+  width: 100%; }
+
+.col-xs-pull-0 {
+  right: auto; }
+
+.col-xs-pull-1 {
+  right: 8.33333%; }
+
+.col-xs-pull-2 {
+  right: 16.66667%; }
+
+.col-xs-pull-3 {
+  right: 25%; }
+
+.col-xs-pull-4 {
+  right: 33.33333%; }
+
+.col-xs-pull-5 {
+  right: 41.66667%; }
+
+.col-xs-pull-6 {
+  right: 50%; }
+
+.col-xs-pull-7 {
+  right: 58.33333%; }
+
+.col-xs-pull-8 {
+  right: 66.66667%; }
+
+.col-xs-pull-9 {
+  right: 75%; }
+
+.col-xs-pull-10 {
+  right: 83.33333%; }
+
+.col-xs-pull-11 {
+  right: 91.66667%; }
+
+.col-xs-pull-12 {
+  right: 100%; }
+
+.col-xs-push-0 {
+  left: auto; }
+
+.col-xs-push-1 {
+  left: 8.33333%; }
+
+.col-xs-push-2 {
+  left: 16.66667%; }
+
+.col-xs-push-3 {
+  left: 25%; }
+
+.col-xs-push-4 {
+  left: 33.33333%; }
+
+.col-xs-push-5 {
+  left: 41.66667%; }
+
+.col-xs-push-6 {
+  left: 50%; }
+
+.col-xs-push-7 {
+  left: 58.33333%; }
+
+.col-xs-push-8 {
+  left: 66.66667%; }
+
+.col-xs-push-9 {
+  left: 75%; }
+
+.col-xs-push-10 {
+  left: 83.33333%; }
+
+.col-xs-push-11 {
+  left: 91.66667%; }
+
+.col-xs-push-12 {
+  left: 100%; }
+
+.col-xs-offset-0 {
+  margin-left: 0%; }
+
+.col-xs-offset-1 {
+  margin-left: 8.33333%; }
+
+.col-xs-offset-2 {
+  margin-left: 16.66667%; }
+
+.col-xs-offset-3 {
+  margin-left: 25%; }
+
+.col-xs-offset-4 {
+  margin-left: 33.33333%; }
+
+.col-xs-offset-5 {
+  margin-left: 41.66667%; }
+
+.col-xs-offset-6 {
+  margin-left: 50%; }
+
+.col-xs-offset-7 {
+  margin-left: 58.33333%; }
+
+.col-xs-offset-8 {
+  margin-left: 66.66667%; }
+
+.col-xs-offset-9 {
+  margin-left: 75%; }
+
+.col-xs-offset-10 {
+  margin-left: 83.33333%; }
+
+.col-xs-offset-11 {
+  margin-left: 91.66667%; }
+
+.col-xs-offset-12 {
+  margin-left: 100%; }
+
+fieldset {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  min-width: 0; }
+
+legend {
+  display: block;
+  width: 100%;
+  padding: 0;
+  margin-bottom: 20px;
+  font-size: 21px;
+  line-height: inherit;
+  color: #333333;
+  border: 0;
+  border-bottom: 1px solid #e5e5e5; }
+
+label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: bold; }
+
+input[type="search"] {
+  box-sizing: border-box; }
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 4px 0 0;
+  margin-top: 1px \9;
+  line-height: normal; }
+
+input[type="file"] {
+  display: block; }
+
+input[type="range"] {
+  display: block;
+  width: 100%; }
+
+select[multiple],
+select[size] {
+  height: auto; }
+
+input[type="file"]:focus,
+input[type="radio"]:focus,
+input[type="checkbox"]:focus {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px; }
+
+output {
+  display: block;
+  padding-top: 7px;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: #555555; }
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: #555555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s; }
+  .form-control:focus {
+    border-color: #66afe9;
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6); }
+  .form-control::-moz-placeholder {
+    color: #999;
+    opacity: 1; }
+  .form-control:-ms-input-placeholder {
+    color: #999; }
+  .form-control::-webkit-input-placeholder {
+    color: #999; }
+  .form-control::-ms-expand {
+    border: 0;
+    background-color: transparent; }
+  .form-control[disabled], .form-control[readonly],
+  fieldset[disabled] .form-control {
+    background-color: #eeeeee;
+    opacity: 1; }
+  .form-control[disabled],
+  fieldset[disabled] .form-control {
+    cursor: not-allowed; }
+
+textarea.form-control {
+  height: auto; }
+
+input[type="search"] {
+  -webkit-appearance: none; }
+
+.form-group {
+  margin-bottom: 15px; }
+
+.radio,
+.checkbox {
+  position: relative;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+  .radio label,
+  .checkbox label {
+    min-height: 20px;
+    padding-left: 20px;
+    margin-bottom: 0;
+    font-weight: normal;
+    cursor: pointer; }
+
+.radio input[type="radio"],
+.radio-inline input[type="radio"],
+.checkbox input[type="checkbox"],
+.checkbox-inline input[type="checkbox"] {
+  position: absolute;
+  margin-left: -20px;
+  margin-top: 4px \9; }
+
+.radio + .radio,
+.checkbox + .checkbox {
+  margin-top: -5px; }
+
+.radio-inline,
+.checkbox-inline {
+  position: relative;
+  display: inline-block;
+  padding-left: 20px;
+  margin-bottom: 0;
+  vertical-align: middle;
+  font-weight: normal;
+  cursor: pointer; }
+
+.radio-inline + .radio-inline,
+.checkbox-inline + .checkbox-inline {
+  margin-top: 0;
+  margin-left: 10px; }
+
+input[type="radio"][disabled], input[type="radio"].disabled,
+fieldset[disabled] input[type="radio"],
+input[type="checkbox"][disabled],
+input[type="checkbox"].disabled,
+fieldset[disabled]
+input[type="checkbox"] {
+  cursor: not-allowed; }
+
+.radio-inline.disabled,
+fieldset[disabled] .radio-inline,
+.checkbox-inline.disabled,
+fieldset[disabled]
+.checkbox-inline {
+  cursor: not-allowed; }
+
+.radio.disabled label,
+fieldset[disabled] .radio label,
+.checkbox.disabled label,
+fieldset[disabled]
+.checkbox label {
+  cursor: not-allowed; }
+
+.form-control-static {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  margin-bottom: 0;
+  min-height: 34px; }
+  .form-control-static.input-lg, .form-control-static.input-sm {
+    padding-left: 0;
+    padding-right: 0; }
+
+.input-sm {
+  height: 30px;
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px; }
+
+select.input-sm {
+  height: 30px;
+  line-height: 30px; }
+
+textarea.input-sm,
+select[multiple].input-sm {
+  height: auto; }
+
+.form-group-sm .form-control {
+  height: 30px;
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px; }
+
+.form-group-sm select.form-control {
+  height: 30px;
+  line-height: 30px; }
+
+.form-group-sm textarea.form-control,
+.form-group-sm select[multiple].form-control {
+  height: auto; }
+
+.form-group-sm .form-control-static {
+  height: 30px;
+  min-height: 32px;
+  padding: 6px 10px;
+  font-size: 12px;
+  line-height: 1.5; }
+
+.input-lg {
+  height: 46px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33333;
+  border-radius: 6px; }
+
+select.input-lg {
+  height: 46px;
+  line-height: 46px; }
+
+textarea.input-lg,
+select[multiple].input-lg {
+  height: auto; }
+
+.form-group-lg .form-control {
+  height: 46px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33333;
+  border-radius: 6px; }
+
+.form-group-lg select.form-control {
+  height: 46px;
+  line-height: 46px; }
+
+.form-group-lg textarea.form-control,
+.form-group-lg select[multiple].form-control {
+  height: auto; }
+
+.form-group-lg .form-control-static {
+  height: 46px;
+  min-height: 38px;
+  padding: 11px 16px;
+  font-size: 18px;
+  line-height: 1.33333; }
+
+.has-feedback {
+  position: relative; }
+  .has-feedback .form-control {
+    padding-right: 42.5px; }
+
+.form-control-feedback {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  display: block;
+  width: 34px;
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+  pointer-events: none; }
+
+.input-lg + .form-control-feedback,
+.input-group-lg + .form-control-feedback,
+.form-group-lg .form-control + .form-control-feedback {
+  width: 46px;
+  height: 46px;
+  line-height: 46px; }
+
+.input-sm + .form-control-feedback,
+.input-group-sm + .form-control-feedback,
+.form-group-sm .form-control + .form-control-feedback {
+  width: 30px;
+  height: 30px;
+  line-height: 30px; }
+
+.has-success .help-block,
+.has-success .control-label,
+.has-success .radio,
+.has-success .checkbox,
+.has-success .radio-inline,
+.has-success .checkbox-inline,
+.has-success.radio label,
+.has-success.checkbox label,
+.has-success.radio-inline label,
+.has-success.checkbox-inline label {
+  color: #3c763d; }
+
+.has-success .form-control {
+  border-color: #3c763d;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
+  .has-success .form-control:focus {
+    border-color: #2b542c;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168; }
+
+.has-success .input-group-addon {
+  color: #3c763d;
+  border-color: #3c763d;
+  background-color: #dff0d8; }
+
+.has-success .form-control-feedback {
+  color: #3c763d; }
+
+.has-warning .help-block,
+.has-warning .control-label,
+.has-warning .radio,
+.has-warning .checkbox,
+.has-warning .radio-inline,
+.has-warning .checkbox-inline,
+.has-warning.radio label,
+.has-warning.checkbox label,
+.has-warning.radio-inline label,
+.has-warning.checkbox-inline label {
+  color: #8a6d3b; }
+
+.has-warning .form-control {
+  border-color: #8a6d3b;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
+  .has-warning .form-control:focus {
+    border-color: #66512c;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #c0a16b; }
+
+.has-warning .input-group-addon {
+  color: #8a6d3b;
+  border-color: #8a6d3b;
+  background-color: #fcf8e3; }
+
+.has-warning .form-control-feedback {
+  color: #8a6d3b; }
+
+.has-error .help-block,
+.has-error .control-label,
+.has-error .radio,
+.has-error .checkbox,
+.has-error .radio-inline,
+.has-error .checkbox-inline,
+.has-error.radio label,
+.has-error.checkbox label,
+.has-error.radio-inline label,
+.has-error.checkbox-inline label {
+  color: #a94442; }
+
+.has-error .form-control {
+  border-color: #a94442;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075); }
+  .has-error .form-control:focus {
+    border-color: #843534;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483; }
+
+.has-error .input-group-addon {
+  color: #a94442;
+  border-color: #a94442;
+  background-color: #f2dede; }
+
+.has-error .form-control-feedback {
+  color: #a94442; }
+
+.has-feedback label ~ .form-control-feedback {
+  top: 25px; }
+
+.has-feedback label.sr-only ~ .form-control-feedback {
+  top: 0; }
+
+.help-block {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  color: #737373; }
+
+.form-horizontal .radio,
+.form-horizontal .checkbox,
+.form-horizontal .radio-inline,
+.form-horizontal .checkbox-inline {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 7px; }
+
+.form-horizontal .radio,
+.form-horizontal .checkbox {
+  min-height: 27px; }
+
+.form-horizontal .form-group {
+  margin-left: -15px;
+  margin-right: -15px; }
+  .form-horizontal .form-group:before, .form-horizontal .form-group:after {
+    content: " ";
+    display: table; }
+  .form-horizontal .form-group:after {
+    clear: both; }
+
+.form-horizontal .has-feedback .form-control-feedback {
+  right: 15px; }
+
+.nav {
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none; }
+  .nav:before, .nav:after {
+    content: " ";
+    display: table; }
+  .nav:after {
+    clear: both; }
+  .nav > li {
+    position: relative;
+    display: block; }
+    .nav > li > a {
+      position: relative;
+      display: block;
+      padding: 10px 15px; }
+      .nav > li > a:hover, .nav > li > a:focus {
+        text-decoration: none;
+        background-color: #eeeeee; }
+    .nav > li.disabled > a {
+      color: #777777; }
+      .nav > li.disabled > a:hover, .nav > li.disabled > a:focus {
+        color: #777777;
+        text-decoration: none;
+        background-color: transparent;
+        cursor: not-allowed; }
+  .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+    background-color: #eeeeee;
+    border-color: #337ab7; }
+  .nav .nav-divider {
+    height: 1px;
+    margin: 9px 0;
+    overflow: hidden;
+    background-color: #e5e5e5; }
+  .nav > li > a > img {
+    max-width: none; }
+
+.nav-tabs {
+  border-bottom: 1px solid #ddd; }
+  .nav-tabs > li {
+    float: left;
+    margin-bottom: -1px; }
+    .nav-tabs > li > a {
+      margin-right: 2px;
+      line-height: 1.42857;
+      border: 1px solid transparent;
+      border-radius: 4px 4px 0 0; }
+      .nav-tabs > li > a:hover {
+        border-color: #eeeeee #eeeeee #ddd; }
+    .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+      color: #555555;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-bottom-color: transparent;
+      cursor: default; }
+
+.nav-pills > li {
+  float: left; }
+  .nav-pills > li > a {
+    border-radius: 4px; }
+  .nav-pills > li + li {
+    margin-left: 2px; }
+  .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+    color: #fff;
+    background-color: #337ab7; }
+
+.nav-stacked > li {
+  float: none; }
+  .nav-stacked > li + li {
+    margin-top: 2px;
+    margin-left: 0; }
+
+.nav-justified, .nav-tabs.nav-justified {
+  width: 100%; }
+  .nav-justified > li, .nav-tabs.nav-justified > li {
+    float: none; }
+    .nav-justified > li > a, .nav-tabs.nav-justified > li > a {
+      text-align: center;
+      margin-bottom: 5px; }
+  .nav-justified > .dropdown .dropdown-menu {
+    top: auto;
+    left: auto; }
+
+.nav-tabs-justified, .nav-tabs.nav-justified {
+  border-bottom: 0; }
+  .nav-tabs-justified > li > a, .nav-tabs.nav-justified > li > a {
+    margin-right: 0;
+    border-radius: 4px; }
+  .nav-tabs-justified > .active > a, .nav-tabs.nav-justified > .active > a,
+  .nav-tabs-justified > .active > a:hover, .nav-tabs.nav-justified > .active > a:hover,
+  .nav-tabs-justified > .active > a:focus, .nav-tabs.nav-justified > .active > a:focus {
+    border: 1px solid #ddd; }
+
+.tab-content > .tab-pane {
+  display: none; }
+
+.tab-content > .active {
+  display: block; }
+
+.nav-tabs .dropdown-menu {
+  margin-top: -1px;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0; }
+
+.navbar {
+  position: relative;
+  min-height: 50px;
+  margin-bottom: 20px;
+  border: 1px solid transparent; }
+  .navbar:before, .navbar:after {
+    content: " ";
+    display: table; }
+  .navbar:after {
+    clear: both; }
+
+.navbar-header:before, .navbar-header:after {
+  content: " ";
+  display: table; }
+
+.navbar-header:after {
+  clear: both; }
+
+.navbar-collapse {
+  overflow-x: visible;
+  padding-right: 15px;
+  padding-left: 15px;
+  border-top: 1px solid transparent;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  -webkit-overflow-scrolling: touch; }
+  .navbar-collapse:before, .navbar-collapse:after {
+    content: " ";
+    display: table; }
+  .navbar-collapse:after {
+    clear: both; }
+  .navbar-collapse.in {
+    overflow-y: auto; }
+
+.navbar-fixed-top .navbar-collapse,
+.navbar-fixed-bottom .navbar-collapse {
+  max-height: 340px; }
+
+.container > .navbar-header,
+.container > .navbar-collapse,
+.container-fluid > .navbar-header,
+.container-fluid > .navbar-collapse {
+  margin-right: -15px;
+  margin-left: -15px; }
+
+.navbar-static-top {
+  z-index: 1000;
+  border-width: 0 0 1px; }
+
+.navbar-fixed-top,
+.navbar-fixed-bottom {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030; }
+
+.navbar-fixed-top {
+  top: 0;
+  border-width: 0 0 1px; }
+
+.navbar-fixed-bottom {
+  bottom: 0;
+  margin-bottom: 0;
+  border-width: 1px 0 0; }
+
+.navbar-brand {
+  float: left;
+  padding: 15px 15px;
+  font-size: 18px;
+  line-height: 20px;
+  height: 50px; }
+  .navbar-brand:hover, .navbar-brand:focus {
+    text-decoration: none; }
+  .navbar-brand > img {
+    display: block; }
+
+.navbar-toggle {
+  position: relative;
+  float: right;
+  margin-right: 15px;
+  padding: 9px 10px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px; }
+  .navbar-toggle:focus {
+    outline: 0; }
+  .navbar-toggle .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px; }
+  .navbar-toggle .icon-bar + .icon-bar {
+    margin-top: 4px; }
+
+.navbar-nav {
+  margin: 7.5px -15px; }
+  .navbar-nav > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 20px; }
+
+.navbar-form {
+  margin-left: -15px;
+  margin-right: -15px;
+  padding: 10px 15px;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
+  margin-top: 8px;
+  margin-bottom: 8px; }
+
+.navbar-nav > li > .dropdown-menu {
+  margin-top: 0;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0; }
+
+.navbar-fixed-bottom .navbar-nav > li > .dropdown-menu {
+  margin-bottom: 0;
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0; }
+
+.navbar-btn {
+  margin-top: 8px;
+  margin-bottom: 8px; }
+  .navbar-btn.btn-sm {
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  .navbar-btn.btn-xs {
+    margin-top: 14px;
+    margin-bottom: 14px; }
+
+.navbar-text {
+  margin-top: 15px;
+  margin-bottom: 15px; }
+
+.navbar-default {
+  background-color: #f8f8f8;
+  border-color: #e7e7e7; }
+  .navbar-default .navbar-brand {
+    color: #777; }
+    .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+      color: #5e5e5e;
+      background-color: transparent; }
+  .navbar-default .navbar-text {
+    color: #777; }
+  .navbar-default .navbar-nav > li > a {
+    color: #777; }
+    .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+      color: #333;
+      background-color: transparent; }
+  .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    color: #555;
+    background-color: #e7e7e7; }
+  .navbar-default .navbar-nav > .disabled > a, .navbar-default .navbar-nav > .disabled > a:hover, .navbar-default .navbar-nav > .disabled > a:focus {
+    color: #ccc;
+    background-color: transparent; }
+  .navbar-default .navbar-toggle {
+    border-color: #ddd; }
+    .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+      background-color: #ddd; }
+    .navbar-default .navbar-toggle .icon-bar {
+      background-color: #888; }
+  .navbar-default .navbar-collapse,
+  .navbar-default .navbar-form {
+    border-color: #e7e7e7; }
+  .navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+    background-color: #e7e7e7;
+    color: #555; }
+  .navbar-default .navbar-link {
+    color: #777; }
+    .navbar-default .navbar-link:hover {
+      color: #333; }
+  .navbar-default .btn-link {
+    color: #777; }
+    .navbar-default .btn-link:hover, .navbar-default .btn-link:focus {
+      color: #333; }
+    .navbar-default .btn-link[disabled]:hover, .navbar-default .btn-link[disabled]:focus,
+    fieldset[disabled] .navbar-default .btn-link:hover,
+    fieldset[disabled] .navbar-default .btn-link:focus {
+      color: #ccc; }
+
+.navbar-inverse {
+  background-color: #222;
+  border-color: #090909; }
+  .navbar-inverse .navbar-brand {
+    color: #9d9d9d; }
+    .navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:focus {
+      color: #fff;
+      background-color: transparent; }
+  .navbar-inverse .navbar-text {
+    color: #9d9d9d; }
+  .navbar-inverse .navbar-nav > li > a {
+    color: #9d9d9d; }
+    .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+      color: #fff;
+      background-color: transparent; }
+  .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+    color: #fff;
+    background-color: #090909; }
+  .navbar-inverse .navbar-nav > .disabled > a, .navbar-inverse .navbar-nav > .disabled > a:hover, .navbar-inverse .navbar-nav > .disabled > a:focus {
+    color: #444;
+    background-color: transparent; }
+  .navbar-inverse .navbar-toggle {
+    border-color: #333; }
+    .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+      background-color: #333; }
+    .navbar-inverse .navbar-toggle .icon-bar {
+      background-color: #fff; }
+  .navbar-inverse .navbar-collapse,
+  .navbar-inverse .navbar-form {
+    border-color: #101010; }
+  .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+    background-color: #090909;
+    color: #fff; }
+  .navbar-inverse .navbar-link {
+    color: #9d9d9d; }
+    .navbar-inverse .navbar-link:hover {
+      color: #fff; }
+  .navbar-inverse .btn-link {
+    color: #9d9d9d; }
+    .navbar-inverse .btn-link:hover, .navbar-inverse .btn-link:focus {
+      color: #fff; }
+    .navbar-inverse .btn-link[disabled]:hover, .navbar-inverse .btn-link[disabled]:focus,
+    fieldset[disabled] .navbar-inverse .btn-link:hover,
+    fieldset[disabled] .navbar-inverse .btn-link:focus {
+      color: #444; }
+
+.fade {
+  opacity: 0;
+  -webkit-transition: opacity 0.15s linear;
+  transition: opacity 0.15s linear; }
+  .fade.in {
+    opacity: 1; }
+
+.collapse {
+  display: none; }
+  .collapse.in {
+    display: block; }
+
+tr.collapse.in {
+  display: table-row; }
+
+tbody.collapse.in {
+  display: table-row-group; }
+
+.collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition-property: height, visibility;
+  transition-property: height, visibility;
+  -webkit-transition-duration: 0.35s;
+  transition-duration: 0.35s;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease; }
+
+body {
+  background: #ffffff !important; }
+
+.header {
+  height: inherit !important;
+  padding: 0 !important;
+  position: inherit !important;
+  box-shadow: none !important; }
+
+.backdrop {
+  display: none !important; }
+
+.article > .wrapper {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important; }
+
+.drawer {
+  padding-top: 0 !important; }
+
+.toc .section {
+  color: #0d2b3e !important; }
+
+.toc a {
+  color: #0d2b3e !important;
+  text-decoration: none !important; }
+  .toc a:hover {
+    color: #4caf50 !important; }
+
+.toc .anchor a {
+  border-color: #4caf50 !important; }
+
+a.headerlink {
+  display: none !important; }
+
+.article table {
+  width: 100% !important; }
+
+header #header {
+  margin: 30px 0 50px; }
+  header #header .navbar-default {
+    background-color: transparent;
+    border-color: transparent; }
+    header #header .navbar-default li {
+      margin-left: 40px; }
+    header #header .navbar-default .navbar-nav > li > a {
+      color: white;
+      font-size: 16px;
+      padding: 0 0 10px; }
+      header #header .navbar-default .navbar-nav > li > a:hover {
+        border-bottom: 2px solid; }
+    header #header .navbar-default .navbar-nav > li.active a {
+      background: none;
+      border-bottom: 2px solid; }
+    header #header .navbar-default .navbar-nav > li.login-button {
+      border: 1px solid black;
+      padding: 5px 10px 5px 10px;
+      top: -5px; }
+      header #header .navbar-default .navbar-nav > li.login-button > a {
+        padding: 0; }
+      header #header .navbar-default .navbar-nav > li.login-button:hover {
+        border-color: transparent;
+        background-color: #fff; }
+        header #header .navbar-default .navbar-nav > li.login-button:hover > a:hover {
+          border: none; }
+    header #header .navbar-default .navbar-toggle {
+      border: none;
+      margin: 0;
+      border-radius: 0; }
+      header #header .navbar-default .navbar-toggle:hover {
+        background: transparent; }
+      header #header .navbar-default .navbar-toggle:active {
+        background: transparent; }
+      header #header .navbar-default .navbar-toggle .icon-bar {
+        background-color: #fff; }
+  header #header .navbar-brand {
+    background: url("../images/20161116-logo.png") no-repeat;
+    width: 80px;
+    height: 27px; }
+    header #header .navbar-brand span {
+      display: none; }
+
+header .banner {
+  min-height: 350px;
+  width: 100%;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  background-size: cover;
+  background-image: url("../images/Hello-World.jpg");
+  margin-bottom: 0 0 50px 0; }
+  header .banner h1 {
+    font-size: 40px;
+    margin: 0 0 30px; }
+  header .banner .introduction {
+    margin: 0 0 60px;
+    line-height: 1.8em; }
+  header .banner.chrome {
+    background-image: url("../images/Hello-World.webp"); }
+  @media only screen and (min-width: 960px) {
+  .backdrop {
+    background: #f2f2f2; }
+  .backdrop-paper:after {
+    box-shadow: 0 1.5px 3px rgba(0, 0, 0, 0.24), 0 3px 8px rgba(0, 0, 0, 0.05); }
+  .button-menu {
+    display: none; }
+  .drawer {
+    position: static;
+    float: left;
+    height: auto;
+    margin-bottom: 96px;
+    padding-top: 80px; }
+  .drawer .scrollable {
+    position: static; }
+  .article {
+    margin-left: 262px; }
+  .footer {
+    z-index: 5; }
+  .copyright {
+    margin-bottom: 64px; }
+  .results {
+    height: auto;
+    top: 64px; }
+  .results .scrollable {
+    position: static;
+    max-height: 413px; } }
+  @media only screen and (max-width: 959px) {
+  .overlay {/*
+     * Expanded drawer
+     */ }
+  #toggle-drawer:checked ~ .overlay,
+      .toggle-drawer .overlay {
+    width: 100%;
+    height: 100%; }
+  .drawer {
+    -webkit-transform: translate3d(-262px, 0, 0);
+    transform: translate3d(-262px, 0, 0);
+    -webkit-transition: -webkit-transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: -webkit-transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);/*
+     * Just hide drawer, if browser doesn't support 3D transforms
+     */ }
+  .no-csstransforms3d .drawer {
+    display: none; }
+  .drawer {
+    background: white; }
+  .project {
+    box-shadow: 0 1.5px 3px rgba(0, 0, 0, 0.24), 0 3px 8px rgba(0, 0, 0, 0.05);
+    background: #e84e40;
+    color: white; }
+  .drawer {
+    position: fixed;
+    z-index: 5;
+    height: 100%; }
+  #toggle-search:checked ~ .main .results,
+      .toggle-search .results {
+    height: 100%; } }
+  @media only screen and (min-width: 720px) {
+  .header {
+    height: 64px;
+    padding: 8px; }
+  .header .stretch {
+    padding: 0 16px 0 16px; }
+  .header .stretch .title {
+    font-size: 20px;
+    padding: 12px 0; }
+  .project .name {
+    margin: 26px 0 0 5px; }
+  .article .wrapper {
+    padding: 128px 24px 96px; }
+  .article .data {
+    margin: 1.5em -24px;/*
+       * Data table
+       */ }
+  .article .data table {
+    margin: 0 24px; }
+  .article {/*
+     * Account for larged header bar and anchors
+     *//*
+     * Sub headlines
+     *//*
+     * Increase spacing for code blocks
+     */ }
+  .article h2 {
+    padding-top: 100px;
+    margin-top: -64px;/*
+       * No offset correction in iOS web application
+       */ }
+  .ios.standalone .article h2 {
+    padding-top: 28px;
+    margin-top: 8px; }
+  .article h3, .article h4 {
+    padding-top: 84px;
+    margin-top: -64px;/*
+       * No offset correction in iOS web application
+       */ }
+  .ios.standalone .article h3, .ios.standalone .article h4 {
+    padding-top: 20px;
+    margin-top: 0; }
+  .article pre {
+    padding: 1.5em 24px;
+    margin: 1.5em -24px 0; }
+  .footer {
+    padding: 0 8px; }
+  .pagination {
+    height: 96px;
+    padding: 8px 0; }
+  .pagination {/*
+     * Increase vertical spacing
+     *//*
+     * Increase vertical spacing
+     */ }
+  .pagination .direction {
+    padding: 0 56px;
+    bottom: 40px; }
+  .pagination .stretch {
+    padding: 0 8px; }
+  .admonition {
+    margin: 20px -24px 0;
+    padding: 20px 24px; }
+  .bar.search .query {
+    font-size: 20px;
+    padding: 12px 0; }
+  .results .scrollable {
+    top: 64px; }
+  .results .meta strong {
+    padding: 16px 24px; }
+  .result {
+    padding: 16px 24px 20px; } }
+  @media only screen and (min-width: 1200px) {
+  .header {
+    width: 100%; }
+  .drawer .scrollable .wrapper hr {
+    width: 48px; } }
+  @media only screen and (orientation: portrait) {
+  .ios.standalone .header {
+    height: 76px;
+    padding-top: 24px;/* [tablet portait+]: Larger header bar *//*
+       * Add status bar overlay
+       */ }
+  .ios.standalone .header:before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    width: 100%;
+    height: 20px; }
+  .ios.standalone .drawer .scrollable {
+    top: 124px; }
+  .ios.standalone .project {
+    padding-top: 20px;/*
+       * Add status bar overlay
+       */ }
+  .ios.standalone .project:before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    width: 100%;
+    height: 20px; }
+  .ios.standalone .article {
+    position: absolute;
+    top: 76px;
+    right: 0;
+    bottom: 0;
+    left: 0; }
+  .ios.standalone .results .scrollable {
+    top: 76px;/* [tablet portait+]: Increase vertical spacing */ } }
+  @media only screen and (orientation: portrait) and (min-width: 720px) {
+  .ios.standalone .header {
+    height: 84px;
+    padding-top: 28px; }
+  .ios.standalone .results .scrollable {
+    top: 84px; } }
+  @media only screen and (max-width: 719px) {
+  .bar .path {
+    display: none; } }
+  @media only screen and (max-width: 479px) {
+  .button-github,
+    .button-twitter {
+    display: none; } }
+  @media only screen and (min-width: 720px) and (max-width: 959px) {
+  .header .stretch {
+    padding: 0 24px; } }
+  @media only screen and (min-width: 480px) {
+  .pagination {/*
+     * Previous and next page
+     *//*
+     * Previous page
+     */ }
+  .pagination .previous,
+      .pagination .next {
+    width: 50%; }
+  .pagination .previous {
+    width: 50%;/*
+       * Show direction
+       *//*
+       * Show title
+       */ }
+  .pagination .previous .direction {
+    display: block; }
+  .pagination .previous .stretch {
+    display: table; } }
+  @media print {/*
+   * Hide non-relevant elements
+   */
+  .header, .drawer, .headerlink, .footer {
+    display: none; }/*
+   * Article
+   */
+  .article {/*
+     * Remove top spacing
+     *//*
+     * Remove color in all code blocks
+     *//*
+     * Border-radius makes this table entirely black on paper, so scrap it
+     */ }
+  .article .wrapper {
+    padding-top: 0; }
+  .article pre, .article pre * {
+    color: rgba(0, 0, 0, 0.87) !important; }
+  .article pre {
+    border: 1px solid rgba(0, 0, 0, 0.12); }
+  .article table {
+    border-radius: none;
+    box-shadow: none;/*
+       * Color header
+       */ }
+  .article table th {
+    color: #e84e40; } }
+  @media (min-width: 768px) {
+  .lead {
+    font-size: 21px; }
+  .dl-horizontal dt {
+    float: left;
+    width: 160px;
+    clear: left;
+    text-align: right;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
+  .dl-horizontal dd {
+    margin-left: 180px; }
+  .container {
+    width: 750px; }
+  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+    float: left; }
+  .col-sm-1 {
+    width: 8.33333%; }
+  .col-sm-2 {
+    width: 16.66667%; }
+  .col-sm-3 {
+    width: 25%; }
+  .col-sm-4 {
+    width: 33.33333%; }
+  .col-sm-5 {
+    width: 41.66667%; }
+  .col-sm-6 {
+    width: 50%; }
+  .col-sm-7 {
+    width: 58.33333%; }
+  .col-sm-8 {
+    width: 66.66667%; }
+  .col-sm-9 {
+    width: 75%; }
+  .col-sm-10 {
+    width: 83.33333%; }
+  .col-sm-11 {
+    width: 91.66667%; }
+  .col-sm-12 {
+    width: 100%; }
+  .col-sm-pull-0 {
+    right: auto; }
+  .col-sm-pull-1 {
+    right: 8.33333%; }
+  .col-sm-pull-2 {
+    right: 16.66667%; }
+  .col-sm-pull-3 {
+    right: 25%; }
+  .col-sm-pull-4 {
+    right: 33.33333%; }
+  .col-sm-pull-5 {
+    right: 41.66667%; }
+  .col-sm-pull-6 {
+    right: 50%; }
+  .col-sm-pull-7 {
+    right: 58.33333%; }
+  .col-sm-pull-8 {
+    right: 66.66667%; }
+  .col-sm-pull-9 {
+    right: 75%; }
+  .col-sm-pull-10 {
+    right: 83.33333%; }
+  .col-sm-pull-11 {
+    right: 91.66667%; }
+  .col-sm-pull-12 {
+    right: 100%; }
+  .col-sm-push-0 {
+    left: auto; }
+  .col-sm-push-1 {
+    left: 8.33333%; }
+  .col-sm-push-2 {
+    left: 16.66667%; }
+  .col-sm-push-3 {
+    left: 25%; }
+  .col-sm-push-4 {
+    left: 33.33333%; }
+  .col-sm-push-5 {
+    left: 41.66667%; }
+  .col-sm-push-6 {
+    left: 50%; }
+  .col-sm-push-7 {
+    left: 58.33333%; }
+  .col-sm-push-8 {
+    left: 66.66667%; }
+  .col-sm-push-9 {
+    left: 75%; }
+  .col-sm-push-10 {
+    left: 83.33333%; }
+  .col-sm-push-11 {
+    left: 91.66667%; }
+  .col-sm-push-12 {
+    left: 100%; }
+  .col-sm-offset-0 {
+    margin-left: 0%; }
+  .col-sm-offset-1 {
+    margin-left: 8.33333%; }
+  .col-sm-offset-2 {
+    margin-left: 16.66667%; }
+  .col-sm-offset-3 {
+    margin-left: 25%; }
+  .col-sm-offset-4 {
+    margin-left: 33.33333%; }
+  .col-sm-offset-5 {
+    margin-left: 41.66667%; }
+  .col-sm-offset-6 {
+    margin-left: 50%; }
+  .col-sm-offset-7 {
+    margin-left: 58.33333%; }
+  .col-sm-offset-8 {
+    margin-left: 66.66667%; }
+  .col-sm-offset-9 {
+    margin-left: 75%; }
+  .col-sm-offset-10 {
+    margin-left: 83.33333%; }
+  .col-sm-offset-11 {
+    margin-left: 91.66667%; }
+  .col-sm-offset-12 {
+    margin-left: 100%; }
+  .form-inline .form-group {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle; }
+  .form-inline .form-control {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle; }
+  .form-inline .form-control-static {
+    display: inline-block; }
+  .form-inline .input-group {
+    display: inline-table;
+    vertical-align: middle; }
+  .form-inline .input-group .input-group-addon,
+    .form-inline .input-group .input-group-btn,
+    .form-inline .input-group .form-control {
+    width: auto; }
+  .form-inline .input-group > .form-control {
+    width: 100%; }
+  .form-inline .control-label {
+    margin-bottom: 0;
+    vertical-align: middle; }
+  .form-inline .radio,
+  .form-inline .checkbox {
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+    vertical-align: middle; }
+  .form-inline .radio label,
+    .form-inline .checkbox label {
+    padding-left: 0; }
+  .form-inline .radio input[type="radio"],
+  .form-inline .checkbox input[type="checkbox"] {
+    position: relative;
+    margin-left: 0; }
+  .form-inline .has-feedback .form-control-feedback {
+    top: 0; }
+  .form-horizontal .control-label {
+    text-align: right;
+    margin-bottom: 0;
+    padding-top: 7px; }
+  .form-horizontal .form-group-lg .control-label {
+    padding-top: 11px;
+    font-size: 18px; }
+  .form-horizontal .form-group-sm .control-label {
+    padding-top: 6px;
+    font-size: 12px; }
+  .nav-justified > li, .nav-tabs.nav-justified > li {
+    display: table-cell;
+    width: 1%; }
+  .nav-justified > li > a, .nav-tabs.nav-justified > li > a {
+    margin-bottom: 0; }
+  .nav-tabs-justified > li > a, .nav-tabs.nav-justified > li > a {
+    border-bottom: 1px solid #ddd;
+    border-radius: 4px 4px 0 0; }
+  .nav-tabs-justified > .active > a, .nav-tabs.nav-justified > .active > a,
+    .nav-tabs-justified > .active > a:hover, .nav-tabs.nav-justified > .active > a:hover,
+    .nav-tabs-justified > .active > a:focus, .nav-tabs.nav-justified > .active > a:focus {
+    border-bottom-color: #fff; }
+  .navbar {
+    border-radius: 4px; }
+  .navbar-header {
+    float: left; }
+  .navbar-collapse {
+    width: auto;
+    border-top: 0;
+    box-shadow: none; }
+  .navbar-collapse.collapse {
+    display: block !important;
+    height: auto !important;
+    padding-bottom: 0;
+    overflow: visible !important; }
+  .navbar-collapse.in {
+    overflow-y: visible; }
+  .navbar-fixed-top .navbar-collapse,
+      .navbar-static-top .navbar-collapse,
+      .navbar-fixed-bottom .navbar-collapse {
+    padding-left: 0;
+    padding-right: 0; }
+  .container > .navbar-header,
+    .container > .navbar-collapse,
+    .container-fluid > .navbar-header,
+    .container-fluid > .navbar-collapse {
+    margin-right: 0;
+    margin-left: 0; }
+  .navbar-static-top {
+    border-radius: 0; }
+  .navbar-fixed-top,
+    .navbar-fixed-bottom {
+    border-radius: 0; }
+  .navbar > .container .navbar-brand,
+    .navbar > .container-fluid .navbar-brand {
+    margin-left: -15px; }
+  .navbar-toggle {
+    display: none; }
+  .navbar-nav {
+    float: left;
+    margin: 0; }
+  .navbar-nav > li {
+    float: left; }
+  .navbar-nav > li > a {
+    padding-top: 15px;
+    padding-bottom: 15px; }
+  .navbar-form .form-group {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle; }
+  .navbar-form .form-control {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle; }
+  .navbar-form .form-control-static {
+    display: inline-block; }
+  .navbar-form .input-group {
+    display: inline-table;
+    vertical-align: middle; }
+  .navbar-form .input-group .input-group-addon,
+      .navbar-form .input-group .input-group-btn,
+      .navbar-form .input-group .form-control {
+    width: auto; }
+  .navbar-form .input-group > .form-control {
+    width: 100%; }
+  .navbar-form .control-label {
+    margin-bottom: 0;
+    vertical-align: middle; }
+  .navbar-form .radio,
+    .navbar-form .checkbox {
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+    vertical-align: middle; }
+  .navbar-form .radio label,
+      .navbar-form .checkbox label {
+    padding-left: 0; }
+  .navbar-form .radio input[type="radio"],
+    .navbar-form .checkbox input[type="checkbox"] {
+    position: relative;
+    margin-left: 0; }
+  .navbar-form .has-feedback .form-control-feedback {
+    top: 0; }
+  .navbar-form {
+    width: auto;
+    border: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    box-shadow: none; }
+  .navbar-text {
+    float: left;
+    margin-left: 15px;
+    margin-right: 15px; }
+  .navbar-left {
+    float: left !important; }
+  .navbar-right {
+    float: right !important;
+    margin-right: -15px; }
+  .navbar-right ~ .navbar-right {
+    margin-right: 0; } }
+  @media (min-width: 992px) {
+  .container {
+    width: 970px; }
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: left; }
+  .col-md-1 {
+    width: 8.33333%; }
+  .col-md-2 {
+    width: 16.66667%; }
+  .col-md-3 {
+    width: 25%; }
+  .col-md-4 {
+    width: 33.33333%; }
+  .col-md-5 {
+    width: 41.66667%; }
+  .col-md-6 {
+    width: 50%; }
+  .col-md-7 {
+    width: 58.33333%; }
+  .col-md-8 {
+    width: 66.66667%; }
+  .col-md-9 {
+    width: 75%; }
+  .col-md-10 {
+    width: 83.33333%; }
+  .col-md-11 {
+    width: 91.66667%; }
+  .col-md-12 {
+    width: 100%; }
+  .col-md-pull-0 {
+    right: auto; }
+  .col-md-pull-1 {
+    right: 8.33333%; }
+  .col-md-pull-2 {
+    right: 16.66667%; }
+  .col-md-pull-3 {
+    right: 25%; }
+  .col-md-pull-4 {
+    right: 33.33333%; }
+  .col-md-pull-5 {
+    right: 41.66667%; }
+  .col-md-pull-6 {
+    right: 50%; }
+  .col-md-pull-7 {
+    right: 58.33333%; }
+  .col-md-pull-8 {
+    right: 66.66667%; }
+  .col-md-pull-9 {
+    right: 75%; }
+  .col-md-pull-10 {
+    right: 83.33333%; }
+  .col-md-pull-11 {
+    right: 91.66667%; }
+  .col-md-pull-12 {
+    right: 100%; }
+  .col-md-push-0 {
+    left: auto; }
+  .col-md-push-1 {
+    left: 8.33333%; }
+  .col-md-push-2 {
+    left: 16.66667%; }
+  .col-md-push-3 {
+    left: 25%; }
+  .col-md-push-4 {
+    left: 33.33333%; }
+  .col-md-push-5 {
+    left: 41.66667%; }
+  .col-md-push-6 {
+    left: 50%; }
+  .col-md-push-7 {
+    left: 58.33333%; }
+  .col-md-push-8 {
+    left: 66.66667%; }
+  .col-md-push-9 {
+    left: 75%; }
+  .col-md-push-10 {
+    left: 83.33333%; }
+  .col-md-push-11 {
+    left: 91.66667%; }
+  .col-md-push-12 {
+    left: 100%; }
+  .col-md-offset-0 {
+    margin-left: 0%; }
+  .col-md-offset-1 {
+    margin-left: 8.33333%; }
+  .col-md-offset-2 {
+    margin-left: 16.66667%; }
+  .col-md-offset-3 {
+    margin-left: 25%; }
+  .col-md-offset-4 {
+    margin-left: 33.33333%; }
+  .col-md-offset-5 {
+    margin-left: 41.66667%; }
+  .col-md-offset-6 {
+    margin-left: 50%; }
+  .col-md-offset-7 {
+    margin-left: 58.33333%; }
+  .col-md-offset-8 {
+    margin-left: 66.66667%; }
+  .col-md-offset-9 {
+    margin-left: 75%; }
+  .col-md-offset-10 {
+    margin-left: 83.33333%; }
+  .col-md-offset-11 {
+    margin-left: 91.66667%; }
+  .col-md-offset-12 {
+    margin-left: 100%; } }
+  @media (min-width: 1200px) {
+  .container {
+    width: 1170px; }
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+    float: left; }
+  .col-lg-1 {
+    width: 8.33333%; }
+  .col-lg-2 {
+    width: 16.66667%; }
+  .col-lg-3 {
+    width: 25%; }
+  .col-lg-4 {
+    width: 33.33333%; }
+  .col-lg-5 {
+    width: 41.66667%; }
+  .col-lg-6 {
+    width: 50%; }
+  .col-lg-7 {
+    width: 58.33333%; }
+  .col-lg-8 {
+    width: 66.66667%; }
+  .col-lg-9 {
+    width: 75%; }
+  .col-lg-10 {
+    width: 83.33333%; }
+  .col-lg-11 {
+    width: 91.66667%; }
+  .col-lg-12 {
+    width: 100%; }
+  .col-lg-pull-0 {
+    right: auto; }
+  .col-lg-pull-1 {
+    right: 8.33333%; }
+  .col-lg-pull-2 {
+    right: 16.66667%; }
+  .col-lg-pull-3 {
+    right: 25%; }
+  .col-lg-pull-4 {
+    right: 33.33333%; }
+  .col-lg-pull-5 {
+    right: 41.66667%; }
+  .col-lg-pull-6 {
+    right: 50%; }
+  .col-lg-pull-7 {
+    right: 58.33333%; }
+  .col-lg-pull-8 {
+    right: 66.66667%; }
+  .col-lg-pull-9 {
+    right: 75%; }
+  .col-lg-pull-10 {
+    right: 83.33333%; }
+  .col-lg-pull-11 {
+    right: 91.66667%; }
+  .col-lg-pull-12 {
+    right: 100%; }
+  .col-lg-push-0 {
+    left: auto; }
+  .col-lg-push-1 {
+    left: 8.33333%; }
+  .col-lg-push-2 {
+    left: 16.66667%; }
+  .col-lg-push-3 {
+    left: 25%; }
+  .col-lg-push-4 {
+    left: 33.33333%; }
+  .col-lg-push-5 {
+    left: 41.66667%; }
+  .col-lg-push-6 {
+    left: 50%; }
+  .col-lg-push-7 {
+    left: 58.33333%; }
+  .col-lg-push-8 {
+    left: 66.66667%; }
+  .col-lg-push-9 {
+    left: 75%; }
+  .col-lg-push-10 {
+    left: 83.33333%; }
+  .col-lg-push-11 {
+    left: 91.66667%; }
+  .col-lg-push-12 {
+    left: 100%; }
+  .col-lg-offset-0 {
+    margin-left: 0%; }
+  .col-lg-offset-1 {
+    margin-left: 8.33333%; }
+  .col-lg-offset-2 {
+    margin-left: 16.66667%; }
+  .col-lg-offset-3 {
+    margin-left: 25%; }
+  .col-lg-offset-4 {
+    margin-left: 33.33333%; }
+  .col-lg-offset-5 {
+    margin-left: 41.66667%; }
+  .col-lg-offset-6 {
+    margin-left: 50%; }
+  .col-lg-offset-7 {
+    margin-left: 58.33333%; }
+  .col-lg-offset-8 {
+    margin-left: 66.66667%; }
+  .col-lg-offset-9 {
+    margin-left: 75%; }
+  .col-lg-offset-10 {
+    margin-left: 83.33333%; }
+  .col-lg-offset-11 {
+    margin-left: 91.66667%; }
+  .col-lg-offset-12 {
+    margin-left: 100%; } }
+  @media screen and (-webkit-min-device-pixel-ratio: 0) {
+  input[type="date"].form-control,
+  input[type="time"].form-control,
+  input[type="datetime-local"].form-control,
+  input[type="month"].form-control {
+    line-height: 34px; }
+  input[type="date"].input-sm,
+  .input-group-sm input[type="date"],
+  input[type="time"].input-sm,
+  .input-group-sm
+  input[type="time"],
+  input[type="datetime-local"].input-sm,
+  .input-group-sm
+  input[type="datetime-local"],
+  input[type="month"].input-sm,
+  .input-group-sm
+  input[type="month"] {
+    line-height: 30px; }
+  input[type="date"].input-lg,
+  .input-group-lg input[type="date"],
+  input[type="time"].input-lg,
+  .input-group-lg
+  input[type="time"],
+  input[type="datetime-local"].input-lg,
+  .input-group-lg
+  input[type="datetime-local"],
+  input[type="month"].input-lg,
+  .input-group-lg
+  input[type="month"] {
+    line-height: 46px; } }
+  @media (max-device-width: 480px) and (orientation: landscape) {
+  .navbar-fixed-top .navbar-collapse,
+    .navbar-fixed-bottom .navbar-collapse {
+    max-height: 200px; } }
+  @media (max-width: 767px) {
+  .navbar-nav .open .dropdown-menu {
+    position: static;
+    float: none;
+    width: auto;
+    margin-top: 0;
+    background-color: transparent;
+    border: 0;
+    box-shadow: none; }
+  .navbar-nav .open .dropdown-menu > li > a,
+      .navbar-nav .open .dropdown-menu .dropdown-header {
+    padding: 5px 15px 5px 25px; }
+  .navbar-nav .open .dropdown-menu > li > a {
+    line-height: 20px; }
+  .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-nav .open .dropdown-menu > li > a:focus {
+    background-image: none; }
+  .navbar-form .form-group {
+    margin-bottom: 5px; }
+  .navbar-form .form-group:last-child {
+    margin-bottom: 0; }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #777; }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #333;
+    background-color: transparent; }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #555;
+    background-color: #e7e7e7; }
+  .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+    color: #ccc;
+    background-color: transparent; }
+  .navbar-inverse .navbar-nav .open .dropdown-menu > .dropdown-header {
+    border-color: #090909; }
+  .navbar-inverse .navbar-nav .open .dropdown-menu .divider {
+    background-color: #090909; }
+  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+    color: #9d9d9d; }
+  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #fff;
+    background-color: transparent; }
+  .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a, .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #fff;
+    background-color: #090909; }
+  .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a, .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:hover, .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+    color: #444;
+    background-color: transparent; } }
+  @media screen and (max-width: 767px) {
+  header #header {
+    margin-bottom: 30px; }
+  header #header .navbar-default .navbar-collapse {
+    border-color: #fff;
+    margin-top: 10px; }
+  header #header .navbar-default .navbar-collapse li {
+    margin-left: 0;
+    margin-bottom: 10px; }
+  header #header .navbar-default .navbar-collapse .navbar-nav > li > a {
+    padding: 5px 0; }
+  header #header .navbar-default .navbar-collapse .navbar-nav > li > a:hover {
+    border: none; }
+  header #header .navbar-default .navbar-collapse .navbar-nav > li.active a {
+    background: #000;
+    border: none; }
+  header .banner {
+    min-height: 230px; }
+  header .banner h1 {
+    line-height: 1.5em; } }
+  @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (-webkit-min-device-pixel-ratio: 1.25), only screen and (min-resolution: 120dpi) {
+  header #header .navbar-brand {
+    background: url("../images/20161116-logo@2x.png") no-repeat;
+    background-size: 80px 27px; } }
+  @media screen and (max-width: 575px) {
+  header .banner h1 {
+    margin-bottom: 10px; }
+  header .banner h1 span.block {
+    display: block; }
+  header .banner .introduction {
+    margin-bottom: 60px; } }

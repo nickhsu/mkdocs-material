@@ -93,6 +93,8 @@ gulp.task('assets:stylesheets', function() {
     .pipe(
       sass({
         includePaths: [
+          'bower_components/bootstrap-sass/assets/stylesheets/',
+          'bower_components/open-sans-fontface/sass/',
           'bower_components/bourbon/app/assets/stylesheets/',
           'bower_components/quantum-colors/',
           'bower_components/quantum-shadows/'

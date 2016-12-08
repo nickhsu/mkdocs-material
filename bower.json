@@ -21,7 +21,9 @@
     "fastclick": "^1.0.6",
     "lunr.js": "^0.6.0",
     "pegasus": "0.3.3",
-    "respond": "^1.4.2"
+    "respond": "^1.4.2",
+    "open-sans-fontface": "^1.4.2",
+    "bootstrap-sass": "^3.3.7"
   },
   "devDependencies": {
     "bourbon": "^4.2.6",
