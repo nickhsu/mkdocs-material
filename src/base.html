@@ -87,14 +87,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/styles/default.min.css" />
-    <script>
-      hljs.initHighlightingOnLoad();
-    </script>
-
     <!-- Custom header -->
     {% block extrahead %}{% endblock %}
 </head>
@@ -201,10 +193,16 @@
   var base_url = '{{ base_url }}';
   var repo_id = '{{ repo_id }}';
 </script>
-<!--<script src="{{ base_url }}/assets/javascripts/application.js"></script>-->
+<script src="{{ base_url }}/assets/javascripts/application.js"></script>
 {% for path in extra_javascript %}
 <script src="{{ path }}"></script>
 {% endfor %}
+
+<script>
+    $(function() {
+      $('.drawer').scrollToFixed();
+    });
+</script>
 
 <!-- Google Analytics -->
 {% if google_analytics %}
