@@ -4945,7 +4945,8 @@ button.close {
 
 body {
   font-family: 'Open Sans', Helvetica, Tahoma, Arial, "Hiragino Sans GB", STXihei, "华文细黑", "Microsoft YaHei", "微软雅黑", SimSun, "宋体", Heiti, "黑体", sans-serif !important;
-  background: #ffffff; }
+  background: #ffffff;
+  box-sizing: border-box; }
 
 .content {
   margin: 2rem 0 2rem 0; }
@@ -4972,6 +4973,8 @@ body {
   .content code {
     color: #0099e5;
     background-color: #F7F8F9; }
+    .content code.hljs {
+      color: inherit; }
   .content p > code {
     margin: 0 0.5rem 0 0.5rem; }
   .content blockquote {

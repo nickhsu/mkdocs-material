@@ -81,6 +81,14 @@
     <!-- Modernizr -->
     <!--<script src="{{ base_url }}/assets/javascripts/modernizr.js"></script>-->
 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/styles/default.min.css" />
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
+
     <!-- Custom header -->
     {% block extrahead %}{% endblock %}
 </head>
@@ -155,8 +163,8 @@
                     <!--<a href="http://www.mkdocs.org" target="_blank">MkDocs</a>-->
                     <!--using the-->
                     <!--<a href="http://squidfunk.github.io/mkdocs-material/"-->
-                       <!--target="_blank">-->
-                        <!--Material-->
+                    <!--target="_blank">-->
+                    <!--Material-->
                     <!--</a>-->
                     <!--theme.-->
                 </aside>
