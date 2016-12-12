@@ -4977,6 +4977,8 @@ body {
       color: inherit; }
   .content p > code {
     margin: 0 0.5rem 0 0.5rem; }
+  .content pre > code {
+    color: inherit; }
   .content blockquote {
     font-size: 15px; }
 

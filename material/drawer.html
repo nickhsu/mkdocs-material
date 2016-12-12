@@ -2,7 +2,7 @@
   {% set home = repo_url | default("/", true) %}
   <div class="scrollable">
     <div class="wrapper">
-      <div class="toc">
+      <div class="toc navbar-collapse collapse">
         <ul class="nav nav-pills nav-stacked">
           {% for nav_item in nav %}
             {% include "nav.html" %}
