@@ -24,9 +24,9 @@
  * Dependencies
  * ------------------------------------------------------------------------- */
 
-@import "bourbon";
-@import "quantum-colors";
-@import "quantum-shadows";
+//@import "bourbon";
+//@import "quantum-colors";
+//@import "quantum-shadows";
 
 
 
@@ -34,38 +34,29 @@
  * Application
  * ------------------------------------------------------------------------- */
 
-@import "reset";
-@import "palette";
-@import "highlight";
+//@import "reset";
+//@import "palette";
+//@import "highlight";
 
-@import "fonts/icon";
+//@import "fonts/icon";
 
-@import "mixins/break";
+//@import "mixins/break";
 
-@import "modules/base";
-@import "modules/drawer";
-@import "modules/article";
-@import "modules/search";
+//@import "modules/base";
+//@import "modules/drawer";
+//@import "modules/article";
+//@import "modules/search";
 
-@import "print";
-@import "shame";
+//@import "print";
+//@import "shame";
 
 // bootstrap-sass
-@import "bootstrap/variables";
-@import "bootstrap/mixins";
+$font-size-base: 15px;
+$font-size-h1: floor(($font-size-base * 2.1));
+$font-size-h2: floor(($font-size-base * 1.75));
+$font-size-h3: floor(($font-size-base * 1.35));
 
-@import "bootstrap/normalize";
-
-@import "bootstrap/scaffolding";
-@import "bootstrap/type";
-@import "bootstrap/grid";
-@import "bootstrap/forms";
-
-@import "bootstrap/navs";
-//@import "bootstrap/tables";
-@import "bootstrap/navbar";
-@import "bootstrap/component-animations";
-
+@import "bootstrap";
 
 //@import "open-sans";
 @import "modules/daike/base";

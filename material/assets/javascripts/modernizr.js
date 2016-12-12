@@ -1,6 +1,6 @@
 /*!
  * modernizr v3.3.1
- * Build http://modernizr.com/download?-checked-contains-csstransforms3d-fontface-json-search-target-webp-addtest-fnbind-printshiv-setclasses-testprop-dontmin
+ * Build http://modernizr.com/download?-checked-contains-hidden-json-search-svg-target-webp-addtest-fnbind-printshiv-setclasses-testprop-dontmin
  *
  * Copyright (c)
  *  Faruk Ates
@@ -1404,6 +1404,147 @@
     return testProps([prop], undefined, value, useValue);
   };
   
+/*!
+{
+  "name": "SVG",
+  "property": "svg",
+  "caniuse": "svg",
+  "tags": ["svg"],
+  "authors": ["Erik Dahlstrom"],
+  "polyfills": [
+    "svgweb",
+    "raphael",
+    "amplesdk",
+    "canvg",
+    "svg-boilerplate",
+    "sie",
+    "dojogfx",
+    "fabricjs"
+  ]
+}
+!*/
+/* DOC
+Detects support for SVG in `<embed>` or `<object>` elements.
+*/
+
+  Modernizr.addTest('svg', !!document.createElementNS && !!document.createElementNS('http://www.w3.org/2000/svg', 'svg').createSVGRect);
+
+/*!
+{
+  "name": "[hidden] Attribute",
+  "property": "hidden",
+  "tags": ["dom"],
+  "notes": [{
+    "name": "WHATWG: The hidden attribute",
+    "href": "https://developers.whatwg.org/editing.html#the-hidden-attribute"
+  }, {
+    "name": "original implementation of detect code",
+    "href": "https://github.com/aFarkas/html5shiv/blob/bf4fcc4/src/html5shiv.js#L38"
+  }],
+  "polyfills": ["html5shiv"],
+  "authors": ["Ron Waldon (@jokeyrhyme)"]
+}
+!*/
+/* DOC
+Does the browser support the HTML5 [hidden] attribute?
+*/
+
+  Modernizr.addTest('hidden', 'hidden' in createElement('a'));
+
+/*!
+{
+  "name": "Webp",
+  "async": true,
+  "property": "webp",
+  "tags": ["image"],
+  "builderAliases": ["img_webp"],
+  "authors": ["Krister Kari", "@amandeep", "Rich Bradshaw", "Ryan Seddon", "Paul Irish"],
+  "notes": [{
+    "name": "Webp Info",
+    "href": "https://developers.google.com/speed/webp/"
+  }, {
+    "name": "Chormium blog - Chrome 32 Beta: Animated WebP images and faster Chrome for Android touch input",
+    "href": "https://blog.chromium.org/2013/11/chrome-32-beta-animated-webp-images-and.html"
+  }, {
+    "name": "Webp Lossless Spec",
+    "href": "https://developers.google.com/speed/webp/docs/webp_lossless_bitstream_specification"
+  }, {
+    "name": "Article about WebP support on Android browsers",
+    "href": "http://www.wope-framework.com/en/2013/06/24/webp-support-on-android-browsers/"
+  }, {
+    "name": "Chormium WebP announcement",
+    "href": "https://blog.chromium.org/2011/11/lossless-and-transparency-encoding-in.html?m=1"
+  }]
+}
+!*/
+/* DOC
+Tests for lossy, non-alpha webp support.
+
+Tests for all forms of webp support (lossless, lossy, alpha, and animated)..
+
+  Modernizr.webp              // Basic support (lossy)
+  Modernizr.webp.lossless     // Lossless
+  Modernizr.webp.alpha        // Alpha (both lossy and lossless)
+  Modernizr.webp.animation    // Animated WebP
+
+*/
+
+
+  Modernizr.addAsyncTest(function() {
+
+    var webpTests = [{
+      'uri': 'data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=',
+      'name': 'webp'
+    }, {
+      'uri': 'data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAABBxAR/Q9ERP8DAABWUDggGAAAADABAJ0BKgEAAQADADQlpAADcAD++/1QAA==',
+      'name': 'webp.alpha'
+    }, {
+      'uri': 'data:image/webp;base64,UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA',
+      'name': 'webp.animation'
+    }, {
+      'uri': 'data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=',
+      'name': 'webp.lossless'
+    }];
+
+    var webp = webpTests.shift();
+    function test(name, uri, cb) {
+
+      var image = new Image();
+
+      function addResult(event) {
+        // if the event is from 'onload', check the see if the image's width is
+        // 1 pixel (which indiciates support). otherwise, it fails
+
+        var result = event && event.type === 'load' ? image.width == 1 : false;
+        var baseTest = name === 'webp';
+
+        /* jshint -W053 */
+        addTest(name, baseTest ? new Boolean(result) : result);
+
+        if (cb) {
+          cb(event);
+        }
+      }
+
+      image.onerror = addResult;
+      image.onload = addResult;
+
+      image.src = uri;
+    }
+
+    // test for webp support in general
+    test(webp.name, webp.uri, function(e) {
+      // if the webp test loaded, test everything else.
+      if (e && e.type === 'load') {
+        for (var i = 0; i < webpTests.length; i++) {
+          test(webpTests[i].name, webpTests[i].uri);
+        }
+      }
+    });
+
+  });
+
+
 
   /**
    * Modernizr.hasEvent() detects support for a given event
@@ -1501,6 +1642,27 @@ There is a custom `search` event implemented in webkit browsers when using an `i
 
   Modernizr.addTest('inputsearchevent',  hasEvent('search'));
 
+/*!
+{
+  "name": "JSON",
+  "property": "json",
+  "caniuse": "json",
+  "notes": [{
+    "name": "MDN documentation",
+    "href": "https://developer.mozilla.org/en-US/docs/Glossary/JSON"
+  }],
+  "polyfills": ["json2"]
+}
+!*/
+/* DOC
+Detects native support for JSON handling functions.
+*/
+
+  // this will also succeed if you've loaded the JSON2.js polyfill ahead of time
+  //   ... but that should be obvious. :)
+
+  Modernizr.addTest('json', 'JSON' in window && 'parse' in JSON && 'stringify' in JSON);
+
 
   /**
    * testStyles injects an element with style element and some CSS rules
@@ -1561,404 +1723,6 @@ There is a custom `search` event implemented in webkit browsers when using an `i
 
   var testStyles = ModernizrProto.testStyles = injectElementWithStyles;
   
-/*!
-{
-  "name": "@font-face",
-  "property": "fontface",
-  "authors": ["Diego Perini", "Mat Marquis"],
-  "tags": ["css"],
-  "knownBugs": [
-    "False Positive: WebOS https://github.com/Modernizr/Modernizr/issues/342",
-    "False Postive: WP7 https://github.com/Modernizr/Modernizr/issues/538"
-  ],
-  "notes": [{
-    "name": "@font-face detection routine by Diego Perini",
-    "href": "http://javascript.nwbox.com/CSSSupport/"
-  },{
-    "name": "Filament Group @font-face compatibility research",
-    "href": "https://docs.google.com/presentation/d/1n4NyG4uPRjAA8zn_pSQ_Ket0RhcWC6QlZ6LMjKeECo0/edit#slide=id.p"
-  },{
-    "name": "Filament Grunticon/@font-face device testing results",
-    "href": "https://docs.google.com/spreadsheet/ccc?key=0Ag5_yGvxpINRdHFYeUJPNnZMWUZKR2ItMEpRTXZPdUE#gid=0"
-  },{
-    "name": "CSS fonts on Android",
-    "href": "https://stackoverflow.com/questions/3200069/css-fonts-on-android"
-  },{
-    "name": "@font-face and Android",
-    "href": "http://archivist.incutio.com/viewlist/css-discuss/115960"
-  }]
-}
-!*/
-
-  var blacklist = (function() {
-    var ua = navigator.userAgent;
-    var wkvers = ua.match(/applewebkit\/([0-9]+)/gi) && parseFloat(RegExp.$1);
-    var webos = ua.match(/w(eb)?osbrowser/gi);
-    var wppre8 = ua.match(/windows phone/gi) && ua.match(/iemobile\/([0-9])+/gi) && parseFloat(RegExp.$1) >= 9;
-    var oldandroid = wkvers < 533 && ua.match(/android/gi);
-    return webos || oldandroid || wppre8;
-  }());
-  if (blacklist) {
-    Modernizr.addTest('fontface', false);
-  } else {
-    testStyles('@font-face {font-family:"font";src:url("https://")}', function(node, rule) {
-      var style = document.getElementById('smodernizr');
-      var sheet = style.sheet || style.styleSheet;
-      var cssText = sheet ? (sheet.cssRules && sheet.cssRules[0] ? sheet.cssRules[0].cssText : sheet.cssText || '') : '';
-      var bool = /src/i.test(cssText) && cssText.indexOf(rule.split(' ')[0]) === 0;
-      Modernizr.addTest('fontface', bool);
-    });
-  }
-;
-
-  /**
-   * If the browsers follow the spec, then they would expose vendor-specific style as:
-   *   elem.style.WebkitBorderRadius
-   * instead of something like the following, which would be technically incorrect:
-   *   elem.style.webkitBorderRadius
-
-   * Webkit ghosts their properties in lowercase but Opera & Moz do not.
-   * Microsoft uses a lowercase `ms` instead of the correct `Ms` in IE8+
-   *   erik.eae.net/archives/2008/03/10/21.48.10/
-
-   * More here: github.com/Modernizr/Modernizr/issues/issue/21
-   *
-   * @access private
-   * @returns {string} The string representing the vendor-specific style properties
-   */
-
-  var omPrefixes = 'Moz O ms Webkit';
-  
-
-  var cssomPrefixes = (ModernizrProto._config.usePrefixes ? omPrefixes.split(' ') : []);
-  ModernizrProto._cssomPrefixes = cssomPrefixes;
-  
-
-  /**
-   * List of JavaScript DOM values used for tests
-   *
-   * @memberof Modernizr
-   * @name Modernizr._domPrefixes
-   * @optionName Modernizr._domPrefixes
-   * @optionProp domPrefixes
-   * @access public
-   * @example
-   *
-   * Modernizr._domPrefixes is exactly the same as [_prefixes](#modernizr-_prefixes), but rather
-   * than kebab-case properties, all properties are their Capitalized variant
-   *
-   * ```js
-   * Modernizr._domPrefixes === [ "Moz", "O", "ms", "Webkit" ];
-   * ```
-   */
-
-  var domPrefixes = (ModernizrProto._config.usePrefixes ? omPrefixes.toLowerCase().split(' ') : []);
-  ModernizrProto._domPrefixes = domPrefixes;
-  
-
-  /**
-   * testDOMProps is a generic DOM property test; if a browser supports
-   *   a certain property, it won't return undefined for it.
-   *
-   * @access private
-   * @function testDOMProps
-   * @param {array.<string>} props - An array of properties to test for
-   * @param {object} obj - An object or Element you want to use to test the parameters again
-   * @param {boolean|object} elem - An Element to bind the property lookup again. Use `false` to prevent the check
-   */
-  function testDOMProps(props, obj, elem) {
-    var item;
-
-    for (var i in props) {
-      if (props[i] in obj) {
-
-        // return the property name as a string
-        if (elem === false) {
-          return props[i];
-        }
-
-        item = obj[props[i]];
-
-        // let's bind a function
-        if (is(item, 'function')) {
-          // bind to obj unless overriden
-          return fnBind(item, elem || obj);
-        }
-
-        // return the unbound function or obj or value
-        return item;
-      }
-    }
-    return false;
-  }
-
-  ;
-
-  /**
-   * testPropsAll tests a list of DOM properties we want to check against.
-   * We specify literally ALL possible (known and/or likely) properties on
-   * the element including the non-vendor prefixed one, for forward-
-   * compatibility.
-   *
-   * @access private
-   * @function testPropsAll
-   * @param {string} prop - A string of the property to test for
-   * @param {string|object} [prefixed] - An object to check the prefixed properties on. Use a string to skip
-   * @param {HTMLElement|SVGElement} [elem] - An element used to test the property and value against
-   * @param {string} [value] - A string of a css value
-   * @param {boolean} [skipValueTest] - An boolean representing if you want to test if value sticks when set
-   */
-  function testPropsAll(prop, prefixed, elem, value, skipValueTest) {
-
-    var ucProp = prop.charAt(0).toUpperCase() + prop.slice(1),
-    props = (prop + ' ' + cssomPrefixes.join(ucProp + ' ') + ucProp).split(' ');
-
-    // did they call .prefixed('boxSizing') or are we just testing a prop?
-    if (is(prefixed, 'string') || is(prefixed, 'undefined')) {
-      return testProps(props, prefixed, value, skipValueTest);
-
-      // otherwise, they called .prefixed('requestAnimationFrame', window[, elem])
-    } else {
-      props = (prop + ' ' + (domPrefixes).join(ucProp + ' ') + ucProp).split(' ');
-      return testDOMProps(props, prefixed, elem);
-    }
-  }
-
-  // Modernizr.testAllProps() investigates whether a given style property,
-  // or any of its vendor-prefixed variants, is recognized
-  //
-  // Note that the property names must be provided in the camelCase variant.
-  // Modernizr.testAllProps('boxSizing')
-  ModernizrProto.testAllProps = testPropsAll;
-
-  
-
-  /**
-   * testAllProps determines whether a given CSS property is supported in the browser
-   *
-   * @memberof Modernizr
-   * @name Modernizr.testAllProps
-   * @optionName Modernizr.testAllProps()
-   * @optionProp testAllProps
-   * @access public
-   * @function testAllProps
-   * @param {string} prop - String naming the property to test (either camelCase or kebab-case)
-   * @param {string} [value] - String of the value to test
-   * @param {boolean} [skipValueTest=false] - Whether to skip testing that the value is supported when using non-native detection
-   * @example
-   *
-   * testAllProps determines whether a given CSS property, in some prefixed form,
-   * is supported by the browser.
-   *
-   * ```js
-   * testAllProps('boxSizing')  // true
-   * ```
-   *
-   * It can optionally be given a CSS value in string form to test if a property
-   * value is valid
-   *
-   * ```js
-   * testAllProps('display', 'block') // true
-   * testAllProps('display', 'penguin') // false
-   * ```
-   *
-   * A boolean can be passed as a third parameter to skip the value check when
-   * native detection (@supports) isn't available.
-   *
-   * ```js
-   * testAllProps('shapeOutside', 'content-box', true);
-   * ```
-   */
-
-  function testAllProps(prop, value, skipValueTest) {
-    return testPropsAll(prop, undefined, undefined, value, skipValueTest);
-  }
-  ModernizrProto.testAllProps = testAllProps;
-  
-/*!
-{
-  "name": "CSS Supports",
-  "property": "supports",
-  "caniuse": "css-featurequeries",
-  "tags": ["css"],
-  "builderAliases": ["css_supports"],
-  "notes": [{
-    "name": "W3 Spec",
-    "href": "http://dev.w3.org/csswg/css3-conditional/#at-supports"
-  },{
-    "name": "Related Github Issue",
-    "href": "github.com/Modernizr/Modernizr/issues/648"
-  },{
-    "name": "W3 Info",
-    "href": "http://dev.w3.org/csswg/css3-conditional/#the-csssupportsrule-interface"
-  }]
-}
-!*/
-
-  var newSyntax = 'CSS' in window && 'supports' in window.CSS;
-  var oldSyntax = 'supportsCSS' in window;
-  Modernizr.addTest('supports', newSyntax || oldSyntax);
-
-/*!
-{
-  "name": "CSS Transforms 3D",
-  "property": "csstransforms3d",
-  "caniuse": "transforms3d",
-  "tags": ["css"],
-  "warnings": [
-    "Chrome may occassionally fail this test on some systems; more info: https://code.google.com/p/chromium/issues/detail?id=129004"
-  ]
-}
-!*/
-
-  Modernizr.addTest('csstransforms3d', function() {
-    var ret = !!testAllProps('perspective', '1px', true);
-    var usePrefix = Modernizr._config.usePrefixes;
-
-    // Webkit's 3D transforms are passed off to the browser's own graphics renderer.
-    //   It works fine in Safari on Leopard and Snow Leopard, but not in Chrome in
-    //   some conditions. As a result, Webkit typically recognizes the syntax but
-    //   will sometimes throw a false positive, thus we must do a more thorough check:
-    if (ret && (!usePrefix || 'webkitPerspective' in docElement.style)) {
-      var mq;
-      var defaultStyle = '#modernizr{width:0;height:0}';
-      // Use CSS Conditional Rules if available
-      if (Modernizr.supports) {
-        mq = '@supports (perspective: 1px)';
-      } else {
-        // Otherwise, Webkit allows this media query to succeed only if the feature is enabled.
-        // `@media (transform-3d),(-webkit-transform-3d){ ... }`
-        mq = '@media (transform-3d)';
-        if (usePrefix) {
-          mq += ',(-webkit-transform-3d)';
-        }
-      }
-
-      mq += '{#modernizr{width:7px;height:18px;margin:0;padding:0;border:0}}';
-
-      testStyles(defaultStyle + mq, function(elem) {
-        ret = elem.offsetWidth === 7 && elem.offsetHeight === 18;
-      });
-    }
-
-    return ret;
-  });
-
-/*!
-{
-  "name": "Webp",
-  "async": true,
-  "property": "webp",
-  "tags": ["image"],
-  "builderAliases": ["img_webp"],
-  "authors": ["Krister Kari", "@amandeep", "Rich Bradshaw", "Ryan Seddon", "Paul Irish"],
-  "notes": [{
-    "name": "Webp Info",
-    "href": "https://developers.google.com/speed/webp/"
-  }, {
-    "name": "Chormium blog - Chrome 32 Beta: Animated WebP images and faster Chrome for Android touch input",
-    "href": "https://blog.chromium.org/2013/11/chrome-32-beta-animated-webp-images-and.html"
-  }, {
-    "name": "Webp Lossless Spec",
-    "href": "https://developers.google.com/speed/webp/docs/webp_lossless_bitstream_specification"
-  }, {
-    "name": "Article about WebP support on Android browsers",
-    "href": "http://www.wope-framework.com/en/2013/06/24/webp-support-on-android-browsers/"
-  }, {
-    "name": "Chormium WebP announcement",
-    "href": "https://blog.chromium.org/2011/11/lossless-and-transparency-encoding-in.html?m=1"
-  }]
-}
-!*/
-/* DOC
-Tests for lossy, non-alpha webp support.
-
-Tests for all forms of webp support (lossless, lossy, alpha, and animated)..
-
-  Modernizr.webp              // Basic support (lossy)
-  Modernizr.webp.lossless     // Lossless
-  Modernizr.webp.alpha        // Alpha (both lossy and lossless)
-  Modernizr.webp.animation    // Animated WebP
-
-*/
-
-
-  Modernizr.addAsyncTest(function() {
-
-    var webpTests = [{
-      'uri': 'data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=',
-      'name': 'webp'
-    }, {
-      'uri': 'data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAABBxAR/Q9ERP8DAABWUDggGAAAADABAJ0BKgEAAQADADQlpAADcAD++/1QAA==',
-      'name': 'webp.alpha'
-    }, {
-      'uri': 'data:image/webp;base64,UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA',
-      'name': 'webp.animation'
-    }, {
-      'uri': 'data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=',
-      'name': 'webp.lossless'
-    }];
-
-    var webp = webpTests.shift();
-    function test(name, uri, cb) {
-
-      var image = new Image();
-
-      function addResult(event) {
-        // if the event is from 'onload', check the see if the image's width is
-        // 1 pixel (which indiciates support). otherwise, it fails
-
-        var result = event && event.type === 'load' ? image.width == 1 : false;
-        var baseTest = name === 'webp';
-
-        /* jshint -W053 */
-        addTest(name, baseTest ? new Boolean(result) : result);
-
-        if (cb) {
-          cb(event);
-        }
-      }
-
-      image.onerror = addResult;
-      image.onload = addResult;
-
-      image.src = uri;
-    }
-
-    // test for webp support in general
-    test(webp.name, webp.uri, function(e) {
-      // if the webp test loaded, test everything else.
-      if (e && e.type === 'load') {
-        for (var i = 0; i < webpTests.length; i++) {
-          test(webpTests[i].name, webpTests[i].uri);
-        }
-      }
-    });
-
-  });
-
-
-/*!
-{
-  "name": "JSON",
-  "property": "json",
-  "caniuse": "json",
-  "notes": [{
-    "name": "MDN documentation",
-    "href": "https://developer.mozilla.org/en-US/docs/Glossary/JSON"
-  }],
-  "polyfills": ["json2"]
-}
-!*/
-/* DOC
-Detects native support for JSON handling functions.
-*/
-
-  // this will also succeed if you've loaded the JSON2.js polyfill ahead of time
-  //   ... but that should be obvious. :)
-
-  Modernizr.addTest('json', 'JSON' in window && 'parse' in JSON && 'stringify' in JSON);
-
 /*!
 {
   "name": "CSS :checked pseudo-selector",
