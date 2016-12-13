@@ -565,3 +565,18 @@
     });
   };
 })(jQuery);
+
+$(function() {
+  if (window.innerWidth > 992) {
+    $('.drawer').scrollToFixed({
+      marginTop: 0,
+    });
+  }
+
+  $('select > .current').attr('selected', 'selected');
+
+  $('.drawer > select').on('change', function() {
+    console.log(this.value);
+    window.location.href = this.value;
+  })
+});

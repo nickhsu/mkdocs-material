@@ -5,7 +5,7 @@ body {
 
 .article {
   .col-md-3 {
-    padding-left: 0;
+    //padding-left: 0;
   }
 
   .navbar {
@@ -133,6 +133,10 @@ body {
 .drawer {
   margin-top: 3rem;
 
+  @media (min-width: 992px) {
+    margin-left: -15px;
+  }
+
   ul {
     list-style-type: none;
 
@@ -147,6 +151,10 @@ body {
 
   &.scroll-to-fixed-fixed {
     margin-top: 1rem;
+  }
+
+  select {
+    width: 100%;
   }
 }
 

@@ -3669,6 +3669,22 @@ lunr.TokenStore.prototype.toJSON = function () {
     });
   };
 })(jQuery);
+
+$(function() {
+  if (window.innerWidth > 992) {
+    $('.drawer').scrollToFixed({
+      marginTop: 0,
+    });
+  }
+
+  $('select > .current').attr('selected', 'selected');
+
+  $('.drawer > select').on('change', function() {
+    console.log(this.value);
+    window.location.href = this.value;
+  })
+});
+
 /*
  * Copyright (c) 2016 Martin Donath <martin.donath@squidfunk.com>
  *

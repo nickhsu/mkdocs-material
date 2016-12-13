@@ -1,5 +1,5 @@
 <div class="drawer">
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-default hidden-xs">
         <div class="container-fluid">
             <div class="navbar-header">
                 <button aria-expanded="false" class="navbar-toggle collapsed" data-target="#navbar-left" data-toggle="collapse" type="button">
@@ -19,4 +19,9 @@
             </div>
         </div>
     </nav>
+    <select class="visible-xs-block">
+        {% for nav_item in nav %}
+            <option value="{{ nav_item.url }}" class="{% if nav_item.active %}current{% endif %}">{{ nav_item.title }}</option>
+        {% endfor %}
+    </select>
 </div>

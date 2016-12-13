@@ -109,15 +109,6 @@
 {% for path in extra_javascript %}
 <script src="{{ path }}"></script>
 {% endfor %}
-<script>
-    $(function() {
-      if (window.innerWidth > 992) {
-        $('.drawer').scrollToFixed({
-          marginTop: 0,
-        });
-      }
-    });
-</script>
 {% if google_analytics %}
 <script>
   (function (i, s, o, g, r, a, m) {
