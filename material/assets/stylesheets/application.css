@@ -5020,6 +5020,8 @@ body {
       margin: 1rem 0 0.7rem 0; }
   .drawer a {
     text-decoration: none; }
+  .drawer.scroll-to-fixed-fixed {
+    margin-top: 1rem; }
 
 .copyright {
   margin-top: 4rem; }

@@ -202,7 +202,9 @@
 <script>
     $(function() {
       if (window.innerWidth > 992) {
-        $('.drawer').scrollToFixed();
+        $('.drawer').scrollToFixed({
+          marginTop: 0,
+        });
       }
     });
 </script>
