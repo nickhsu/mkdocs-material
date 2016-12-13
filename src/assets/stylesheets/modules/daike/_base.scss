@@ -1,10 +1,46 @@
 body {
   font-family: 'Open Sans', Helvetica, Tahoma, Arial, "Hiragino Sans GB", STXihei, "华文细黑", "Microsoft YaHei", "微软雅黑", SimSun, "宋体", Heiti, "黑体", sans-serif !important;
   background: #ffffff;
+}
 
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+.article {
+  .col-md-3 {
+    padding-left: 0;
+  }
+
+  .navbar {
+    a {
+      color: #343434;
+    }
+
+    a.current {
+      color: #00AF73;
+    }
+
+    li.anchor {
+      margin: 1rem 0 1.5rem 0;
+      font-weight: 100;
+    }
+
+    @media (min-width: 768px) {
+      border: 0;
+      padding: 2rem 0 2rem 0;
+    }
+
+    @media (max-width: 768px) {
+      margin-bottom: 3rem;
+    }
+
+  }
+
+  .navbar-default .navbar-toggle {
+    border: 0;
+  }
+
+  .navbar {
+    background-color: #F7F8F9;
+  }
+
 }
 
 .content {
@@ -16,13 +52,13 @@ body {
     text-justify: inter-ideographic;
   }
 
-  h2 {
-    //color: #3090e4;
-  }
-
   h2, h3 {
     font-style: normal;
     font-weight: lighter;
+  }
+
+  h1 {
+    margin-bottom: 2.5rem;
   }
 
   h2 {
@@ -38,12 +74,16 @@ body {
     margin-top: 3rem;
   }
 
-  //h3 {
-  //  margin-top: 4rem;
-  //}
+  h3 {
+    margin-bottom: 2.5rem;
+  }
 
   li {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
+
+    > p {
+      margin-bottom: 0.5rem;
+    }
   }
 
   table {
@@ -63,6 +103,7 @@ body {
   code {
     color: #0099e5;
     background-color: #F7F8F9;
+    font-weight: 400;
 
     &.hljs {
       color: inherit;
@@ -73,8 +114,15 @@ body {
     margin: 0 0.5rem 0 0.5rem;
   }
 
-  pre > code {
-    color: inherit;
+  pre {
+    border: 0;
+    border-radius: 0;
+    background: #F7F8F9;
+
+    > code {
+      color: inherit;
+      font-family: Source Code Pro, Consolas, Menlo, monospace;
+    }
   }
 
   blockquote {
@@ -96,6 +144,7 @@ body {
   a {
     text-decoration: none;
   }
+
 }
 
 .copyright {
