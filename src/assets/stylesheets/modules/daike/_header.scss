@@ -43,7 +43,8 @@
       & > li > a {
         color: white;
         font-size: 16px;
-        padding: 0 0 10px;
+        padding: 10px 0;
+        border-top: 2px solid transparent;
         border-bottom: 2px solid transparent;
 
         &:hover {
@@ -58,8 +59,7 @@
 
       > li.login-button {
         border-left: 1px solid #fff;
-        padding: 5px 10px 5px 30px;
-        top: -5px;
+        padding: 0 10px 0 30px;
 
         @media screen and (max-width: $screen-xs-max) {
           border-left: none;
@@ -98,7 +98,7 @@
     @media only screen and (-webkit-min-device-pixel-ratio: 1.3),
     only screen and (-o-min-device-pixel-ratio: 13/10),
     only screen and (min-resolution: 120dpi) {
-      background: url(asset_path('20161116-logo@2x.png')) no-repeat;
+      background: url('../images/20161116-logo@2x.png') no-repeat;
       background-size: 80px 27px;
     }
 
@@ -120,7 +120,6 @@
   background-repeat: no-repeat;
 
   background-image: url('../images/header-3.jpg');
-
 
   @media screen and (max-width: 767px) {
     $height: 230px;
