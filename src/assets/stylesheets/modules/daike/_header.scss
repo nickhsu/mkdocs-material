@@ -66,6 +66,15 @@
           padding-left: 10px;
         }
       }
+
+      .login-button {
+          top: 11px;
+          margin-left: 30px;
+
+          a {
+              padding: 0;
+          }
+      }
     }
 
     .navbar-toggle {
@@ -119,7 +128,7 @@
   background-size: cover;
   background-repeat: no-repeat;
 
-  background-image: url('../images/header-3.jpg');
+  background-image: url('../images/header-4.jpg');
 
   @media screen and (max-width: 767px) {
     $height: 230px;
