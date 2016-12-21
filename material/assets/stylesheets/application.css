@@ -5756,6 +5756,9 @@ body {
   #header .navbar-default .navbar-nav > li.login-button{
     border-left: none;
     padding-left: 10px; }
+  #header .navbar-default .navbar-nav .login-button{
+    top: 0;
+    margin-left: 0; }
   .banner{
     min-height: 230px; }
   .banner h1{
